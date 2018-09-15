@@ -1,5 +1,76 @@
-#+TITLE: Papier blanc de la crypto Komodo
+#+TITLE: [[https://komodoplatform.com/wp-content/uploads/2018/06/Komodo-Whitepaper-June-3.pdf][Papier blanc de la crypto Komodo]]
 #+AUTHOR: Laurent Garnier
+
+* Introduction à Komodo 
+  Le projet Komodo vise à donner aux utilisateurs la liberté de passer
+  par la technologie blockchain. Il existe de nombreuses formes de
+  liberté que Komodo peut offrir, et nous nous concentrons
+  actuellement sur l’autonomisation de deux types d’utilisateurs :
+  l’entrepreneur de la chaîne de blocs et l’investisseur moyen de
+  crypto-monnaie. Ensemble, notre communauté d’entrepreneurs,
+  d’investisseurs et d’autres utilisateurs forme un écosystème
+  économique. 
+
+  Le pilier fondamental de l'écosystème de Komodo est la
+  sécurité. Komodo fournit une forme de sécurité unique et innovante
+  qui est aussi forte que le réseau Bitcoin, mais ne nécessite pas le
+  coût incroyable. Chaque membre de l'écosystème de Komodo bénéficie
+  des avantages de cette sécurité. L'investisseur en dépend pour un
+  usage quotidien. L'entrepreneur compte sur lui pour protéger son
+  innovation de blockchain à un coût abordable, même pour les petites
+  entreprises et les startups. 
+
+  Une autre des technologies puissantes de Komodo est une nouvelle
+  méthode de trading de cryptomonnaies directement d’une personne à
+  une autre. C’est un nouveau type d’«échange décentralisé». Notre
+  échange décentralisé supprime toutes les formes d’intermédiaires, de
+  bons et de services de dépôt fiduciaire. Il s'appuie sur un concept
+  sous-jacent appelé «échange atomique» et nous sommes les meneurs de
+  cette technologie.
+
+  Notre échange décentralisé alimenté par un échange atomique sert à
+  la fois l'investisseur et l'entrepreneur de la chaîne de blocs.
+
+  Pour l'investisseur, ils peuvent négocier des devises sans avoir à
+  passer par un échange centralisé, ce qui peut être un processus ardu
+  et même dangereux. Ils n'ont pas non plus besoin d'utiliser un
+  service de dépôt fiduciaire, un bon d'achat, ni même une pièce de
+  monnaie intermédiaire, même pas de Bitcoin. De plus, il n'y a pas de
+  processus d'enregistrement requis, ni de limites de retrait. Nous
+  prenons actuellement en charge environ 95% des cryptomonnaies
+  existantes, y compris les pièces basées sur le protocole Bitcoin,
+  les jetons Ethereum et les jetons ERC20 basés sur Ethereum. 
+
+  Pour l'entrepreneur, notre échange décentralisé permet de lancer de
+  nouveaux produits dans le monde sans implication des
+  intermédiaires. De plus, même les entrepreneurs qui ont déjà
+  construit d’autres projets de blockchain en dehors de notre
+  écosystème peuvent facilement mettre leur pièce sur notre échange
+  décentralisé. La seule exigence est que le produit blockchain ait
+  les éléments de sécurité appropriés au cœur du code de la
+  blockchain. 
+
+  Komodo intègre également de puissantes fonctionnalités de
+  confidentialité dans notre plate-forme. Cela permet à l'investisseur
+  d'échanger et d'acheter des biens et services dans le cadre de son
+  droit à la vie privée. Cela permet également à l'entrepreneur de
+  libérer son produit et de créer des sources de financement auprès
+  d'un public qui préfère conserver cette confidentialité.
+
+  Il existe de nombreuses autres technologies et fonctionnalités dans
+  l'écosystème de Komodo, et nous assistons à une croissance rapide
+  des entrepreneurs et des investisseurs. 
+
+  Ce livre blanc de Komodo propose une discussion approfondie sur les
+  fonctions de sécurité uniques de Komodo, notre échange décentralisé,
+  la méthode de diffusion des nouveaux produits et nos fonctionnalités
+  de confidentialité natives.
+
+  Nous accueillons les commentaires de nos lecteurs. Si vous avez des
+  questions ou des préoccupations concernant la lecture de ce
+  document, veuillez contacter directement notre équipe. Vous pouvez
+  trouver nos coordonnées sur notre site Web d'accompagnement : [[https://komodoplatform.com/]]
+
 
 * Méthode de sécurité Komodo : preuve de travail différé (DPOW : Delayed Proof Of Work)
 ** Une discussion fondamentale de la sécurité d'une blockchain
@@ -114,3 +185,6 @@
 **** Détails concernant la chaîne primaire de l'écosystème de Komodo : KMD
 **** Conclusion 
 ** Rémerciements et références
+* Liens pour collaborer
+  1. La vidéo explicative : [[https://youtu.be/L1IU06G9TUE]]
+  2. Rejoindre le groupe [[https://t.me/joinchat/JGxHIxMP5cWHHVDjxpcATQ][Telegram]] pour la répartition des tâches
