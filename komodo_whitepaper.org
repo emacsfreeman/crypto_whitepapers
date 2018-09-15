@@ -1,10 +1,116 @@
 #+TITLE: Papier blanc de la crypto Komodo
 #+AUTHOR: Laurent Garnier
 
-* Méthode de sécurité Komodo : preuve de travail différé (DOW : Delayed Proof Of Work)
+* Méthode de sécurité Komodo : preuve de travail différé (DPOW : Delayed Proof Of Work)
 ** Une discussion fondamentale de la sécurité d'une blockchain
+*** Qu'est-ce qu'un mécanisme de consensus ?
+**** Le problème de "double dépense"
+**** Le mécanisme de consensus fournit une sécurité contre une "double dépense"
+**** Un mineur est en compétition pour ajouter des blocs à l'historique du réseau avec une récompense en retour
 ** La preuve de travail est la forme la plus sécurisée des mécanismes de consensus
+*** La vitesse et la puissance sont l'essence
+**** L'effet de réseau : la capacité de Bitcoin à dominer commence
+*** La règle de la chaîne la plus longue : la "sauce secrète" de la domination PoW (Proof of Work: preuve de travail)
+**** Les effets simples de la règle de la plus longue chaîne
+**** Le compte des deux blockchains
+**** Un conflit d'intérêt interne survient avec le réseau Bitcoin 
+**** La règle de la plus longue chaîne : l'historique qui est le plus long en premier, gagne
+*** La façon "simple"  de détruire un réseau PoW : l'attaque des 51%
+*** La taille est une autre raison derrière le succès actuel de Bitcoin parmi les réseaux PoW
+*** La façon "dure" de détruire un réseau PoW : l'attaque de la génèse (Genesis Attack)
+**** Une attaque de la génèse sur le réseau Bitcoin
+**** Les dangers plus réalistes de l'attaque de la génèse
+*** Les problèmes financiers et environnementaux avec tous les réseaux PoW
+**** Les réseaux PoW coûtent chers
+**** Les mineurs sont libres de miner d'autres réseaux
+**** Le premier mécanisme de consensus alternatif : preuve de part ou preuve d'enjeu (Proof of Stake)
+**** Les risques de sécurité et les défauts de PoS
+**** Un résumé du mécanisme de consensus PoW
+** La solution Komodo
+*** Résumé du mécanisme de consensus sur la preuve de travail différée (dPoW)
+**** Une note sur la technologie Iguana Core de Komodo
+**** Une brève discussion sur la sécurité assurée par les noeuds notaires
+*** Le processus de notarisation
+**** Comprendre les incitations économique et sécuritaire dans le réseau dPoW Komodo
+*** Mesures de protection de Komodo en action 
+**** Les notarisations fournissent une défense contre l'attaque de 51% et l'attaque de la genèse.
+*** Le mécanisme de consensus dPoW est inhérent à tous les actifs des chaînes Komodo
+
 * Les ICO décentralisées (DICO : Decentralized Initial Coin Offering)
+** Résumé des DICO
+*** Les défis dans les plateformes ICO actuelles
+*** Faiblesses spécifiques dans le modèle centralisé ICO
+*** Discrimination de tiers via les ICO centralisées
+*** Centralisation des technologies ICO : baleines, pirates, et erreurs humaines
+*** Pirates et erreurs humaines
+** La solution Komodo 
+*** Les DICO
+*** Le processus de création d'une nouvelle blockchain dans l'écosystème Komodo 
+**** La première commande pour créer une nouvelle pièce 
+*** Les fonctionnalités de la nouvelle chaîne d'actif
+*** Générer et miner les pièces
+**** L'approvisionnement total en pièces est distribué dans le bloc de la génèse
+*** Notarisation de la chaîne Komodo principale
+*** La distribution des pièces 
+**** Les essais et les déplacements de la méthode ICO centralisée
+*** Entrer dans les dICO
+**** Alimenté par les technologies Komodo BarterDEX et Jumblr
+**** Les nombreuses solutions du modèle dICO: sécurité, confidentialité, décentralisation et liberté.
 * Barterdex place de marché décentralisée ou la puissance d'échange atomique Komodo
+** Résumé (BarterDEX)
+*** Introduction
+**** Les débuts et les voyages des échanges décentralisés
+**** BarterDEX : une solution complète
+**** Améliorations récentes dans BarterDEX
+*** Technologie BarterDEX
+**** Correspondance d'ordre
+**** Correspondance des commandes avec les nœuds à relais complet et sans relais
+**** La technologie Jumblr ajoute de l'intimité
+**** Iguana Core fournit la base de notre fonctionnalité "adresse intelligente ("Smart Address")
+*** Les UTXO : un concept insaisissable, mais fondamental.
+**** Comparaison entre les UTXO et les monnaies fiat
+**** Compréhension des crypto-monnaies et leurs UTXOs
+*** Trading sur BarterDEX 
+**** Comment BarterDEX traite les offres de commande et les UTXOs
+*** Explications détaillées du processus BarterDEX
+**** Echanges atomiques sur le Komodo BarterDEX
+**** Introduction, Alice et Bob
+**** Alice et Bob font un marché
+**** Mesures incitatives et dissuasives pour maintenir un bon comportement
+**** Détails supplémentaires sur l'échange atomique BarterDEX
+*** Une explication plus détaillée du processus de connexion d'échange atomique
+**** Les frais DEX : <dexfee>
+**** L'API BarterDEX
+**** Une brève discussion sur le futur de BarterDEX
 * Jumblr la fonctionnalité native Komodo pour la vie privée
+** Résumé (Jumblr)
+*** Introduction
+**** L'option de la protection de la vie privée est essentielle à l'écosystème de Komodo
+**** Défis pour les systèmes centrés sur la confidentialité et la solution Komodo
+*** La solution Komodo
+**** Une introduction à Jumblr
+**** Une brève explication des deux technologies fondamentales
+*** Le processus Jumblr
+**** Anonymisation de pièces Komodo native (KMD)
+**** Actions utilisateur 
+*** Couches de sécurité additionnelles
+**** Le processus de rupture de fonds de Jumblr
+**** Le processus de Jumblr de déplacer les lots individuels vers une adresse privée
+*** Considérations de confidentialité supplémentaires
+**** L'attaque chronométrique
+**** L'attaque de sac à dos
+**** Autres améliorations de la sécurité pour lutter contre les attaques de synchronisation et de sac à dos
+*** Offrir la confidentialité à d'autres crypto-monnaies
+**** Le processus Jumblr actuel : trading manuel non-KMD vers trading sur BarterDEX
+**** Capacités futures : Jumblr automatise le processus de négociation BarterDEX pour l'utilisateur
+*** Un mot sur les risques inhérents à Jumblr et à l'écosystème de Komodo
+*** Jumblr fournit à l'écosystème de Komodo la confidentialité
 * Information supplémentaire selon l'écosystème Komodo
+** Notes finales concernant le projet Komodo
+*** Crypto-monnaies à taux fixe 
+*** Contrats intelligents sur la plateforme Komodo 
+**** Contrats intelligents basés sur le protocole Bitcoin
+**** Conditions cryptographiques, racine Merkle de la racine Merkle (MoM: Merkle Root of Merkle Root) et chaînes d'actifs personnalisées
+**** Détails concernant la chaîne primaire de l'écosystème de Komodo : KMD
+**** Conclusion 
+** Rémerciements et références
