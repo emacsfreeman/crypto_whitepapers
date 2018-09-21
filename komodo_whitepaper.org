@@ -71,11 +71,71 @@
   document, veuillez contacter directement notre équipe. Vous pouvez
   trouver nos coordonnées sur notre site Web d'accompagnement : [[https://komodoplatform.com/]]
 
-
 * Méthode de sécurité Komodo : preuve de travail différé (DPOW : Delayed Proof Of Work)
 ** Une discussion fondamentale de la sécurité d'une blockchain
+   La forme de sécurité de Komodo s'appelle la technologie de preuve
+   de travail différée (dPoW). Il s'appuie sur la forme la plus
+   avancée de sécurité de la chaîne de blocs existante, la technologie
+   de preuve de travail (PoW). Cette dernière forme de sécurité est la
+   méthode utilisée par le réseau Bitcoin. Pour comprendre la valeur
+   de la sécurité dPoW de Komodo, nous devons d'abord expliquer
+   comment PoW fonctionne et pourquoi il s'agit de la méthode la plus
+   sécurisée de maintenance d'une blockchain décentralisée. Nous
+   devons également examiner les lacunes de PoW, afin que nous
+   puissions comprendre la nécessité de la méthode dPoW de Komodo et
+   les avantages qu'elle apporte à la communauté de la blockchain. 
+
+   Pour comprendre comment fonctionne la technologie PoW, nous
+   commençons par expliquer les racines qui font du protocole Bitcoin
+   un moyen viable de transférer de la valeur en toute sécurité. 
+
+
 *** Qu'est-ce qu'un mécanisme de consensus ?
 **** Le problème de "double dépense"
+
+     La création de la technologie de la chaîne de blocs découle des
+     premières études mathématiques du cryptage utilisant la
+     technologie informatique. 
+
+     L'un de ces exemples concerne le dispositif de codage de
+     l'information "Enigma", inventé par les Allemands à la fin de la
+     Première Guerre mondiale. Alan Turing, un agent britannique de
+     renseignement, a battu le dispositif Enigma en inventant le
+     premier «ordinateur numérique» au monde. This provided enough
+     computing power to break Enigma's encryption and discover the
+     German secret communications[fn:1].
+
+     Cette première affaire de cryptage a déclenché une course à
+     travers le monde pour développer une myriade de formes de
+     transfert sécurisé des informations d'un pary à l'autre via la
+     technologie informatique. Bien que chaque nouvelle forme de
+     chiffrement informatique offrait davantage d’avantages, il
+     restait un problème qui empêchait le chiffrement d’être utile
+     pour transférer non seulement des informations, mais aussi une
+     valeur financière.
+
+     Ce problème est connu sous le nom de problème de «double
+     dépense». Le problème réside dans la capacité des ordinateurs à
+     dupliquer sans cesse les informations. Dans le cas de la valeur
+     financière, il y a trois choses importantes à noter: qui possède
+     une valeur spécifique; l'heure à laquelle la personne possède
+     cette valeur; l'adresse du portefeuille dans lequel réside la
+     valeur. Lors du transfert de valeur financière d’une personne à
+     une autre, il est essentiel que si la personne A envoie de
+     l’argent à la personne B, la personne A ne soit pas en mesure de
+     reproduire le même montant et de le renvoyer à la personne C. 
+
+     Le protocole Bitcoin[fn:2], inventé par une personne anonyme (ou des
+     personnes) revendiquant le nom de Satoshi Nakamoto, a résolu le
+     problème des doubles dépenses. Le code mathématique et
+     informatique sous-jacent est à la fois très complexe et
+     innovant. Pour les besoins de cet article, nous devons seulement
+     nous concentrer sur le seul aspect du protocole Bitcoin qui
+     résout le problème des doubles dépenses: le mécanisme de
+     consensus. 
+
+     
+
 **** Le mécanisme de consensus fournit une sécurité contre une "double dépense"
 **** Un mineur est en compétition pour ajouter des blocs à l'historique du réseau avec une récompense en retour
 ** La preuve de travail est la forme la plus sécurisée des mécanismes de consensus
@@ -188,3 +248,21 @@
 * Liens pour collaborer
   1. La vidéo explicative : [[https://youtu.be/L1IU06G9TUE]]
   2. Rejoindre le groupe [[https://t.me/joinchat/JGxHIxMP5cWHHVDjxpcATQ][Telegram]] pour la répartition des tâches
+* Ressources complémentaires
+  1. [[https://youtu.be/ooJCp3YTLKk][2017-06-29]]
+  2. [[https://youtu.be/INVxFEWo6VI][2017-09-23]]
+  3. [[https://youtu.be/bUja6AOL05w][2017-10-03]]
+  4. [[https://youtu.be/GUzpzgfvTlg][2017-10-18]]
+  5. [[https://youtu.be/wnKAfgv_g9M][2017-10-29]]
+  6. [[https://youtu.be/epwgFAZj0z0][2017-11-06]]
+  7. [[https://youtu.be/BSXTWOx10vI][2017-12-23]]
+  8. [[https://youtu.be/O1_K4JAiomo][2017-12-26]]
+  9. [[https://youtu.be/Y_AiDg1o2Ns][2018-08-16]]
+ 10. [[https://youtu.be/C0KWm3h2fFM][2018-09-14]]
+ 11. 
+
+* Footnotes
+
+[fn:2] https://en.wikipedia.org/wiki/Bitcoin_network
+
+[fn:1] https://en.wikipedia.org/wiki/Enigma_machine
