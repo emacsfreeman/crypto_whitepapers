@@ -440,7 +440,70 @@
 *** Le mécanisme de consensus dPoW est inhérent à tous les actifs des chaînes Komodo
 
 * Les ICO décentralisées (DICO : Decentralized Initial Coin Offering)
+  
 ** Résumé des DICO
+
+     Il y a un grand pouvoir dans l'idée que toute personne,
+  indépendamment de sa nationalité, de ses croyances ou de ses
+  antécédents, peut obtenir des fonds pour innover et prospérer. Un
+  principe fondamental de la technologie de la chaîne de blocs est la
+  «décentralisation». En décentralisant les systèmes, nous réduisons
+  le nombre de points de contrôle pouvant être compromis et
+  manipulés. La décentralisation joue un rôle plus commun dans notre
+  nouvelle économie de la crypto-monnaie, mais il y a un domaine du
+  marché qui reste centralisé et vulnérable: l'offre initiale de
+  pièces (ICO). L'industrie de la cryptomonnaie a besoin d'une
+  solution et Komodo présente une réponse avec notre offre de pièces
+  initiale décentralisée (dICO).
+
+  Dans le modèle ICO commun d’aujourd’hui, le niveau élevé de
+  centralisation crée de nombreux problèmes. Des tiers peuvent bloquer
+  ou manipuler les efforts des entrepreneurs pour innover et
+  prospérer. L’emplacement centralisé de la libération du produit de
+  la blockchain ICO est vulnérable, permettant aux baleines, aux
+  pirates informatiques et aux erreurs humaines de corrompre ou de
+  détruire les efforts d’un entrepreneur. L'expérience négative des
+  utilisateurs dans ces situations peut également avoir un impact sur
+  la perception et l'adoption de la crypto-monnaie. En outre, le
+  caractère traçable d’une ICO empêche la société de recourir )
+  production participative[fn:6] et aux achats dans le cadre de son
+  droit inhérent à troquer en privé.
+
+  Le modèle dICO, créé par le projet Komodo, surmonte ces défis. Il
+  fournit la technologie nécessaire pour créer et publier un produit
+  blockchain au monde avec le plein pouvoir de la décentralisation.
+
+  Les entrepreneurs qui s’appuient sur notre plate-forme commencent
+  par créer une chaîne d’actifs et notre technologie simplifie ce
+  processus. Il suffit d'installer le logiciel nécessaire, d'exécuter
+  quelques commandes sur une invite de commande, puis d'établir une
+  connexion entre deux ou plusieurs périphériques compatibles
+  Komodo. La technologie de base de Komodo effectuera le reste du
+  travail nécessaire pour créer une blockchain totalement
+  indépendante, dotée d’un ensemble de fonctionnalités Komodo.
+
+  Notre technologie dPoW est une caractéristique clé, comme expliqué
+  dans la partie I. dPoW fournit la sécurité nécessaire pour protéger
+  l'intégrité de la blockchain. L'utilisation de dPoW est facultative,
+  et comme les chaînes d'actifs dans l'écosystème de Komodo sont
+  indépendantes par nature, les entrepreneurs peuvent interrompre les
+  services dPoW à volonté.
+
+  Ayant ainsi créé la blockchain, l'entrepreneur utilise alors notre
+  système d'échange décentralisé pour libérer le projet au monde de
+  manière décentralisée. Notre échange décentralisé s'appelle
+  BarterDEX et est expliqué en détail dans la partie III de cet
+  article. BarterDEX étant un échange décentralisé, et grâce à notre
+  technologie de swap atomique (également expliquée dans la partie
+  III), aucun tiers manipulateur ne peut empêcher l’entrepreneur de
+  mener des activités innovantes et de participation à la production.
+
+  Grâce à notre technologie de confidentialité, Jumblr, les
+  participants à dICO peuvent acheter le produit dans le cadre de leur
+  droit inhérent à l'échange en privé. Une explication détaillée de
+  Jumblr et de sa méthode de protection de la vie privée est fournie
+  dans la partie IV de ce document.
+
 *** Les défis dans les plateformes ICO actuelles
 *** Faiblesses spécifiques dans le modèle centralisé ICO
 *** Discrimination de tiers via les ICO centralisées
@@ -534,6 +597,8 @@
  11. 
 
 * Footnotes
+
+[fn:6] NdT : crowdsourcing
 
 [fn:5] NdT : /'number' you use 'once'/ => nonce
 
