@@ -731,27 +731,637 @@
 **** Une brève discussion sur le futur de BarterDEX
 * Jumblr la fonctionnalité native Komodo pour la vie privée
 ** Résumé (Jumblr)
+   Jumblr est une technologie Komodo qui permet aux utilisateurs
+   d’anonymiser leurs crypto-monnaies. À son niveau fondamental,
+   Jumblr prend des fonds non privés d’une adresse transparente (non
+   privée), les déplace dans une série d’adresses zk-SNARK privées et
+   non traçables - ce qui déconnecte la trace de la devise et
+   anonymise les fonds - puis renvoie les fonds à une nouvelle adresse
+   transparente choisie par l'utilisateur. Grâce à une technologie
+   Komodo connectée, BarterDEX, Jumblr peut fournir ce service non
+   seulement pour la pièce de monnaie de Komodo, KMD, mais également
+   pour toute crypto-monnaie connectée à l’écosystème de Komodo.
+
+   
 *** Introduction
 **** L'option de la protection de la vie privée est essentielle à l'écosystème de Komodo
+     L’un des principaux objectifs de l’écosystème de Komodo est de
+     fournir à nos utilisateurs les plus hauts niveaux de sécurité. La
+     possibilité de s’auto-protéger de la vie privée fait partie
+     intégrante d’un système de sécurité solide. La confidentialité
+     permet aux utilisateurs de faire des choix sans être directement
+     contrôlés ou observés par un tiers acteur.
+
+     Parmi les avancées les plus significatives de l’art, de la
+     technologie et d’autres projets humains, l’humanité a été créée
+     dans des situations où le créateur avait la sécurité de la vie
+     privée pour explorer, découvrir, commettre des erreurs et
+     apprendre de la sorte.
+
+     Les racines de l'écosystème de Komodo sont issues du travail
+     fondateur de Satoshi Nakamoto et son protocole
+     Bitcoin[fn:7]. L'un des principaux défis de cette technologie est
+     que le protocole d'origine ne tient aucun compte de la
+     confidentialité. Par conséquent, en faisant progresser la
+     technologie de la blockchain, nous avons créé Jumblr pour donner
+     aux membres de l’écosystème de Komodo les moyens de bénéficier de
+     cette sécurité nécessaire.
+
 **** Défis pour les systèmes centrés sur la confidentialité et la solution Komodo
+     Les voies actuelles pour obtenir la confidentialité dans le
+     secteur de la blockchain posent de nombreux problèmes. 
+
+     L'une des méthodes les plus populaires pour obtenir la
+     confidentialité est l'utilisation d'un service de mixage
+     centralisé. Lors de ce processus, les utilisateurs envoient leurs
+     crypto-monnaies à des fournisseurs de services, qui mélangent
+     ensuite toutes les pièces des participants et les renvoient en
+     fonction des contributions correspondantes. Avec cette méthode,
+     le problème le plus dangereux, parmi beaucoup d'autres, est que
+     pendant la période de mixage, les utilisateurs perdent le
+     contrôle de leur devise. Les fonds sont donc sujets au vol et aux
+     erreurs humaines.
+
+     D'autres méthodes de mélange de pièces décentralisées, telles que
+     le mélange de pièces[fn:8], nécessitent une coordination avec d'autres
+     parties humaines. Cela introduit également le potentiel des mêmes
+     problèmes de vol et d’erreur humaine et ajoute un risque
+     supplémentaire: la coordination entre les parties humaines peut
+     entraîner la divulgation de la vie privée d’un utilisateur.
+
+     Certaines crypto-monnaies prennent en charge le mélange dans le
+     cadre du processus de transaction normal, dans le souci de
+     fournir un anonymat constant. Différentes méthodes de
+     randomisation de ces modèles de mélange de transactions existent
+     parmi les nombreuses marques de cryptomonnaies pertinentes. Le
+     plus populaire est Monero. 
+
+     
 *** La solution Komodo
 **** Une introduction à Jumblr
+     Notre technologie Jumblr résout ces problèmes grâce à une
+     approche en deux couches reposant sur les technologies connectées
+     de l'écosystème de Komodo: BarterDEX, notre pièce de monnaie
+     Komodo (KMD) et les paramètres Zcash en amont. Le processus
+     Jumblr est géré localement sur la machine de l'utilisateur et ne
+     nécessite aucun tiers, aucune coordination humaine ni aucun autre
+     service de mixage.
+
+     
 **** Une brève explication des deux technologies fondamentales
+***** La pièce Komodo (KMD)
+      KMD est une crypto-monnaie qui permet aux utilisateurs
+      d'effectuer des transactions transparentes et privées. Lors du
+      développement de l'écosystème de Komodo, nous utilisons KMD en
+      tant que crypto-monnaie native pour de nombreuses technologies
+      de connexion. KMD devient ainsi de plus en plus utile au fur et
+      à mesure que de nombreux outils Komodo sont construits, y
+      compris Jumblr
+***** KMD a commencé comme une fourche de Zcash
+      Cette pièce a commencé comme une fourchette de la pièce
+      populaire pour la protection de la vie privée, Zcash[fn:9]. En
+      tant que tel, KMD conserve les mêmes fonctionnalités de
+      confidentialité intrinsèques. Parmi ces fonctionnalités, notons
+      les paramètres Zcash et la technologie zk-SNARK. Celles-ci
+      permettent aux utilisateurs de transférer des fonds sur une
+      blockchain publique sans laisser de trace de données pour une
+      analyse ultérieure.
+
+      C’est l’une des formes les plus puissantes de confidentialité de
+      la blockchain, puisque la condition de vie privée est
+      effectivement permanente. Les paramètres Zcash et la technologie 
+      zk-SNARK fournissent aux utilisateurs la base initiale pour
+      obtenir un financement transparent du KMD et le rendre anonyme
+      (avec l’aide de la technologie Jomodr de Komodo) sans laisser de
+      piste de crypto-monnaie.
+
+      Le projet Zcash lui-même est un fork de Bitcoin. Ainsi, toutes
+      les fonctionnalités conçues par Satoshi Nakamoto dans le
+      protocole Bitcoin sont également disponibles à Komodo.
+***** BarterDEX
+
+      BarterDEX est un protocole open source conçu et mis au point par
+      l'équipe de Komodo. Il permet aux utilisateurs d’échanger des
+      pièces de monnaie cryptée sans risque de contrepartie. Le
+      protocole est open-source et le trading est disponible pour
+      toutes les pièces que les développeurs choisissent de connecter
+      à BarterDEX.
+      
+      Une discussion approfondie de BarterDEX est fournie dans la
+      section précédente de la partie III de ce document.
+***** Le coeur Iguouane       
+      Une technologie de base de Komodo, appelée Iguana Core, est
+      essentielle à la fonctionnalité globale de l'écosystème de
+      Komodo. Il est au centre de presque tous les projets de Komodo,
+      et Jumblr ne fait pas exception. Pour plus d'informations sur
+      Iguana Core, veuillez consulter notre référentiel Komodo
+      [[https://github.com/jl777/komodo][GitHub]]. Vous trouverez également plus de détails dans la section
+      BarterDEX de ce livre blanc.
+***** Komodod      
+
+      Komodod est le nom du logiciel d’arrière-plan (également appelé
+      démon) qui fonctionne dans les coulisses de pratiquement tous
+      les logiciels liés à Komodo. Vous trouverez plus d’informations
+      sur Komodod dans la partie DICO de ce document.
+
 *** Le processus Jumblr
+    Jumblr permet aux utilisateurs d'anonymiser leurs fonds. Le
+    processus Jumblr est enraciné dans notre pièce de monnaie Komodo
+    (KMD), et les fonctions de confidentialité peuvent s’étendre de ce
+    fait à tout projet de blockchain connecté à l’écosystème de
+    Komodo.
 **** Anonymisation de pièces Komodo native (KMD)
+     Au niveau le plus simple, Jumblr prend des fonds KMD non privés
+     d'une adresse transparente (non privée), les déplace dans une
+     série d'adresses zk-SNARK privées et non traçables, ce qui
+     déconnecte la trace de la devise et anonymise les fonds ... et
+     retourne ensuite les fonds à une nouvelle adresse transparente
+     choisie par l'utilisateur.
+
+     L’intégralité du processus d’anonymisation s’effectue sur la ou
+     les machines locales de l’utilisateur, à une exception près:
+     celui de l’envoi des données au réseau pour une extraction. Par
+     conséquent, Jumblr élimine de nombreux dangers, y compris les
+     problèmes de vol, d'erreur humaine, de divulgation de la vie
+     privée des utilisateurs par le biais d'une coordination humaine
+     et la destruction de la vie privée par la nature toujours
+     croissante de la puissance de traitement informatique.
+
 **** Actions utilisateur 
+     Les commandes qui initient Jumblr existent dans le programme
+     fondamental de Komodo sur la machine locale de l’utilisateur,
+     Komodod. Ce programme est inclus dans une installation Komodo
+     typique et, dans des circonstances normales, Komodod est connecté
+     de manière native aux mêmes adresses KMD auxquelles l'utilisateur
+     a accès.
+
+     Par conséquent, les utilisateurs de l’écosystème de Komodo ont
+     accès à la technologie de confidentialité de Jumblr sans autre
+     effort. Les développeurs d'applications graphiques autonomes pour
+     l'écosystème de Komodo peuvent intégrer les commandes Jumblr aux
+     interfaces utilisateur de la manière souhaitée.
+
+     Il existe deux commandes principales, ou appels d'API,
+     disponibles :
+     + =jumblr_deposit <KMDaddress>=
+     + =jumblr_secret <secretKMDaddress>=
+***** =jumblr_deposit <KMDaddress>=
+      Cette commande initie l'anonymisation de KMD.
+
+      Avant d'exécuter la commande, l'utilisateur prépare les fonds en
+      les plaçant dans la <KMDaddress> choisie. Tant que Komodod a
+      accès aux clés privées de <KMDaddress>, rien n'est plus
+      nécessaire. L'utilisateur exécute simplement la commande
+      "jumblr_deposit <KMDaddress>" et Jumblr commence à rechercher et
+      à traiter tous les fonds dans <KMDaddress>.
+
+      Remarque: nous appelons une adresse transparente une "adresse
+      T." Celles-ci sont entièrement accessibles à l'utilisateur et
+      constituent le moyen d'effectuer des transactions
+      normales. Toutes les devises entrant et sortant d'une adresse T
+      sont entièrement visibles sur le réseau.
+
+      D'autre part, nous appelons une adresse activée pour la
+      confidentialité une "adresse Z", car ils utilisent les
+      paramètres Zcash et la technologie zk-SNARK. Les adresses Z sont
+      internes au processus Jumblr et un utilisateur n’interagit
+      généralement pas directement avec elles.
+
+      La première étape que Jumblr entreprend consiste à déplacer les
+      fonds de l’utilisateur d’une adresse T à une adresse Z.
+
+      #+BEGIN_CENTER
+      _La première étape du processus d'anonymisation de Jumblr_
+      #+END_CENTER
+
+      Déplacement des fonds d'une adresse transparente vers une
+      adresse activée pour la confidentialité.
+
+      #+BEGIN_CENTER
+      T\rightarrow Z
+      #+END_CENTER
+      
+      Naturellement, comme l'adresse T est entièrement publique, un
+      observateur extérieur peut voir les fonds dès leur départ pour
+      l'adresse Z respective. Par conséquent, pour déconnecter
+      complètement la piste de devise, Jumblr déplace ensuite les
+      fonds de l'adresse Z initiale vers une autre adresse Z.
+
+      Jumblr crée une nouvelle adresse Z pour chaque lot individuel.
+
+      #+BEGIN_CENTER
+      _La deuxième étape du processus d'anonymisation de Jumblr_
+      #+END_CENTER
+      
+      Déplacement des fonds d'une adresse Z unique et introuvable
+      
+      #+BEGIN_CENTER
+      Z\rightarrow Z
+      #+END_CENTER
+
+      Grâce à la technologie des paramètres Zcash, zk-SNARKs et
+      Jumblr, le les informations sur l'emplacement des fonds ne sont
+      connues que de l'utilisateur. L'utilisateur n'a pas besoin de
+      suivre les mouvements de T → Z et Z → Z. Toutefois, pour
+      l'utilisateur avancé, des commandes Jumblr sont disponibles pour
+      permettre une interaction plus active à ces étapes (voir le wiki
+      de Komodo pour plus de détails). Une commande à mentionner ici
+      est z_gettotalbalance. Cela révèle à l'utilisateur le solde
+      total qu'il détient dans toutes ses adresses Z. 
+
+      Lors de l'exécution de la commande =[jumblr_deposit
+      <KMDaddress>]=, Jumblr commence à observer en permanence la
+      =<KMDaddress>=. Si l'utilisateur envoie plus de fonds dans son
+      =<KMDaddress>= alors que Jumblr traite déjà le montant précédent,
+      Jumblr prendra simplement ces nouveaux fonds en compte,
+      exécutera les actions nécessaires pour les intégrer correctement
+      dans le processus et poursuivra son cours.
+      
+      Jumblr comprend deux sous-commandes qui permettent à
+      l'utilisateur de mettre Jumblr en pause manuellement :
+      =<jumblr_pause>= et =<jumblr_resume>=. L'utilisateur peut
+      également arrêter Jumblr en fermant Komodod (et toutes les
+      applications GUI autonomes appropriées). Une fois que les fonds
+      ont atteint leur (s) adresse (s) finale (s), ils restent en
+      sommeil, dans l’attente de la prochaine commande de
+      l’utilisateur.
+
+      
+***** =jumblr_secret <secretKMDaddress>=
+      L'utilisateur exécute cette commande pour terminer le processus
+      Jumblr. Jumblr extraira toutes les devises cachées de
+      l’utilisateur de chaque adresse Z et placera les fonds dans une
+      nouvelle adresse T, que nous appellerons
+      =<secretKMDaddress>=. Cela rend les fonds réutilisables à
+      nouveau. 
+
+      #+BEGIN_CENTER
+      _La troisième et dernière étape du processus d'anonymisation de Jumblr_
+      #+END_CENTER
+
+      Déplacement des fonds d'une adresse Z unique et introuvable
+
+      #+BEGIN_CENTER
+      Z\rightarrow T
+      #+END_CENTER
+
+      Nous vous recommandons de conserver ces adresses privées
+      principalement pour le stockage. Vous ne devriez jamais partager
+      avec qui que ce soit des informations concernant votre
+      =<secretKMDaddress>=. Traitez toutes les informations pertinentes
+      comme un mot de passe.
+
+      Lorsque vous êtes prêt à dépenser avec vos fonds privés, nous
+      vous recommandons vous répétez le processus Jumblr à nouveau
+      pour le montant que vous souhaitez dépenser. Cela maintiendra la
+      majeure partie de vos fonds stockés dans un "intervalle" de
+      confidentialité, pour ainsi dire. Pour une confidentialité
+      maximale, nous suggérons également qu'après avoir vidé le nœud
+      public de tous les fonds, l'utilisateur supprime et détruise le
+      fichier wallet.dat dans lequel le processus initial de création
+      de la confidentialité a eu lieu. Cela détruit les derniers
+      vestiges du chemin de crypto-monnaie.
+
 *** Couches de sécurité additionnelles
 **** Le processus de rupture de fonds de Jumblr
+     La méthode par laquelle Jumblr décompose et traite les fonds
+     fournit encore une autre couche de la vie privée. Jumblr commence
+     par prendre le montant total dans <KMDaddress> et, si nécessaire,
+     en le divisant jusqu'à ce que les plus grandes quantités soient
+     toutes égales à ~7770 KMD. Il décompose ensuite le reste en
+     quantités de ~100 KMD, puis le reste en quantités de ~ 10
+     KMD. Tout reste final (qui serait inférieur à ~10 KMD) est
+     ignoré.
+
+     Notez que Jumblr extrait également automatiquement ses frais
+     généraux de 0,3% au cours du processus Jumblr.
+     
+     Par conséquent, le montant total est divisé en lots de ~ 7770
+     KMD, ~ 100 KMD et ~ 10 KMD.
+
 **** Le processus de Jumblr de déplacer les lots individuels vers une adresse privée
+     Jumblr ne déplace pas immédiatement chaque lot dans une adresse
+     Z. Au lieu de cela, il effectue ses actions de manière aléatoire
+     afin d'optimiser l'anonymat, en utilisant le collectif de tous
+     les utilisateurs de Jumblr dans l'écosystème de Komodo pour
+     fusionner les transactions de la foule.
+
+     Tout d’abord, toutes les actions Jumblr de l’écosystème sont
+     programmées pour se regrouper autour de nombres de blocs
+     multiples de dix (c’est-à-dire hauteur de la chaîne =
+     XXXXX0). Cela regroupe toutes les demandes Jumblr de tous les
+     utilisateurs pour la période donnée dans un grand groupe,
+     regroupées toutes les dix minutes (un bloc unique génère chaque
+     minute et, par conséquent, le dixième bloc se produit toutes les
+     dix minutes).
+
+     Au moment de l'activité, Jumblr effectue l'une des deux tâches
+     suivantes: il effectue l'action suivante dans le processus
+     d'anonymisation ou il choisit de ne rien faire.
+
+***** Option 1 : Jumblr réalise la prochaine action     
+
+      Lorsque Jumblr regarde l'action suivante, il peut effectuer
+      l'une des trois étapes suivantes :
+      
+      + T → Z Si le lot n'a pas encore été déplacé de <KMDaddress>,
+        Jumblr peut le déplacer de la première adresse T à la première
+        adresse Z.
+      + Z → Z En supposant que le lot se trouve maintenant dans la
+        première adresse Z, Jumblr peut le déplacer vers l'adresse Z
+        finale
+      + Z → T En supposant que l'appel d'API <jumblr_secret> soit
+        activé, Jumblr peut déplacer le lot de l'adresse Z finale vers
+        l'adresse T finale: <secretKMDaddress>.
+	
+***** Option 2 : ne fait rien
+      + À chaque tour, au lieu d'effectuer l'une des étapes ci-dessus,
+        Jumblr peut simplement s'abstenir de toute action. Cela se
+        produit environ la moitié du temps.
+	
+
+      Grâce à ces actions, Jumblr ajoute une couche d’obscurcissement
+      au-dessus des paramètres Zcash et de la technologie zk-SNARK en
+      ajoutant de la confidentialité au minutage et aux mouvements de
+      chaque étape pour chaque utilisateur.
+
 *** Considérations de confidentialité supplémentaires
+    Le processus d’anonymisation de KMD fournit une mesure de
+    confidentialité et peut semblent suffisantes, il existe encore
+    plus de précautions qu'un utilisateur doit prendre. Deux attaques
+    principales sont disponibles pour un détective potentiel.
+
 **** L'attaque chronométrique
+     Dans cette attaque, le détective étudie simplement le moment où
+     les fonds disparaissent de l'adresse =<KMDaddress>= et cherche des
+     fonds à apparaître dans une adresse T peu de temps après. Si
+     l'utilisateur de la confidentialité choisit de manière
+     persistante un minutage prévisible pour le lancement et
+     l'exécution des commandes Jumblr, un tiers déterminé peut en
+     déduire la =<secretKMDaddress>= d'un utilisateur.
+
+     Le processus susmentionné de regroupement et de randomisation du
+     minutage des mouvements fournit une couche de sécurité contre The
+     Timing Attack. Les utilisateurs combinent ainsi la
+     synchronisation de leurs mouvements, utilisant le pouvoir du
+     collectif pour masquer leurs transactions depuis le limier.
+
+     Cependant, l’attaque au moment d’émission reste un problème si
+     l’utilisateur est la seule personne qui emploie Jumblr pour la
+     durée de l’anonymisation de ses fonds. Dans ce cas, aucune
+     anonymisation n'a lieu. Le détective peut clairement voir les
+     fonds sortir de =<KMDaddress>= et revenir à =<secretKMDaddress>= plus
+     tard. Par conséquent, pour être efficace, Jumblr nécessite plus
+     d'un utilisateur et gagne en force avec des niveaux d'adoption
+     plus élevés. Compte tenu de la taille croissante de la communauté
+     de Komodo, nous prévoyons que les utilisateurs seront facilement
+     en mesure de surmonter l'attaque au chronométrage.
+
 **** L'attaque de sac à dos
+     L’attaque au sac à dos est un peu comme l’attaque au
+     chronométrage, mais les montants. Par exemple, si une seule
+     adresse KMD a entré ~ 1000000 KMD dans Jumblr, et que environ 1
+     000 KMD apparaît plus tard ailleurs, le détective peut facilement
+     distinguer la =<secretKMDaddress>= de l'utilisateur.
+
+     Le processus de décomposition du montant total en trois lots de
+     taille égale (~7770, ~100, ~10 KMD) pour tous les utilisateurs
+     fournit une couche de sécurité contre l'attaque de sac à dos. Les
+     utilisateurs peuvent à nouveau mélanger leurs transactions, en
+     utilisant la puissance du collectif pour dissimuler leurs
+     mouvements.
+     
+     Jumblr a une autre fonctionnalité, Multiple Secret Addresses, qui
+     protège également contre cette attaque. Cette fonctionnalité est
+     expliquée dans la section suivante.
+
 **** Autres améliorations de la sécurité pour lutter contre les attaques de synchronisation et de sac à dos
+***** Plus de défense contre l'attaque du sac à dos : adresses secrètes multiples
+      En tant que couche de sécurité supplémentaire, les utilisateurs
+      peuvent créer plusieurs adresses KMD secrètes
+      (=<secretKMDaddress>=) et les utiliser activement dans le
+      processus Jumblr.
+
+      Si vous utilisez plusieurs =<secretKMDaddress>=, chaque fois que
+      Jumblr atteint l’étape de Z → T pour un lot donné de KMD, Jumblr
+      choisira au hasard l'un des =<secretK-Adresse MD>= pour l’adresse
+      T finale de ce lot. Cela permet à l’utilisateur de scinder son
+      financement initial en plusieurs =<secretKMDaddress>= différentes,
+      offrant ainsi une couche de sécurité supplémentaire contre
+      l’attaque avec sac à dos.
+
+      Jumblr gère jusqu'à 777 =<secretKMDaddress>= en même temps.
+
+***** Autres améliorations contre l'attaque de chronométrage      
+      La défense la plus simple et la plus solide contre le Timing
+      Attack est entre les mains des utilisateurs. Rappelez-vous qu'un
+      utilisateur choisit les moments où il exécute les commandes
+      <jumblr_deposit> et <jumblr_secret>. Plus un utilisateur
+      conserve longtemps sa devise dans la ou les adresses Z blindées,
+      plus il est protégé contre l’attaque par synchronisation. Cela
+      est dû au fait que les actions Jumblr d’autres utilisateurs
+      pendant l’intérim obscurcissent la piste. Nous encourageons donc
+      les utilisateurs soucieux de leur protection contre cette
+      attaque à retarder le délai d'exécution entre les deux
+      commandes.
+
+      Nous avons également développé Jumblr pour offrir des
+      protections inhérentes supplémentaires contre l’attaque par
+      synchronisation dans les cas où les utilisateurs souhaitent un
+      transfert plus immédiat. En supposant que Jumblr soit activé sur
+      l’ordinateur local de l’utilisateur, dès que Jumblr détecte un
+      nouveau dépôt dans <KMDaddress>, il peut commencer le processus
+      d’anonymisation. Cependant, Jumblr retarde délibérément ses
+      propres progrès afin de fournir une couche de sécurité contre
+      The Timing Attack.
+
+      Rappelez-vous que toutes les actions des utilisateurs sont
+      regroupées autour de nombres de blocs multiples de dix, et la
+      moitié du temps, Jumblr décide de ne rien faire. Par conséquent,
+      sur le plan statistique, bien que le processus d'arrière-plan
+      Jumblr puisse toujours fonctionner à Komodod, Jumblr n'est
+      activé que pour vérifier les tâches en attente toutes les dix
+      minutes et n'effectue des tâches que toutes les vingt
+      minutes. Ainsi, chaque heure comporte environ trois moments
+      différents au cours desquels Jumblr exécutera l'une des trois
+      actions disponibles: T → Z, Z → Z et Z → T. Ce programme
+      randomise le temps nécessaire à l'achèvement du processus
+      Jumblr.
+
+      En supposant que, pendant une période d'activité donnée, Jumblr
+      décide d'effectuer l'action de T → Z, il commence par examiner
+      les différentes tailles de lots, du plus grand au plus petit,
+      commençant ainsi à un lot de 7770 km / h jusqu'à ce qu'ils
+      soient tous attribués, puis aux Lots de 100 KMD, et enfin les
+      lots de 10 KMD. Pendant toute la période d'activité, Jumblr
+      n'effectuera le mouvement T → Z que pour un seul lot, puis
+      s'arrêtera.
+      
+      Cependant, lorsque Jumblr effectue l'une des deux autres actions
+      (Z → Z et Z → T), il effectue les transferts pour tous les lots
+      en jeu.
+
+      Ainsi, grâce à ces garanties supplémentaires, Jumblr triomphe de
+      l’attaque par synchronisation et de l’attaque avec sac à dos, en
+      s’appuyant sur la puissance des paramètres Zcash et de la
+      technologie zk-SNARK. Plus il y a de participants à Jumblr, plus
+      les utilisateurs gagnent en confidentialité. Pour ceux qui
+      utilisent régulièrement Jumblr, le coût d'utilisation de Jumblr
+      de 0,3% est compensé par les 5,1% de récompenses pouvant être
+      gagnés avec la pièce de monnaie Komodo (KMD). Ainsi, moyennant
+      une somme modique, les utilisateurs de Jumblr peuvent se
+      protéger et protéger leur communauté.
+
 *** Offrir la confidentialité à d'autres crypto-monnaies
+    Jumblr peut assurer la confidentialité de toute crypto-monnaie
+    connectée à l'écosystème de Komodo, étant donné que BarterDEX est
+    intégré de manière native. Actuellement, l'utilisateur doit
+    effectuer les premières et dernières étapes de la négociation dans
+    le processus Jumblr des crypto-monnaies non-KMD. À long terme,
+    Jumblr est toutefois capable d'automatiser complètement le
+    processus. Nous attendons une adoption plus large pour compléter
+    les fonctionnalités d'automatisation non-KMD.
+
 **** Le processus Jumblr actuel : trading manuel non-KMD vers trading sur BarterDEX
+     Globalement, pour assurer la confidentialité d'une crypto-monnaie
+     non KMD dans l'écosystème de Komodo, cette devise doit d'abord
+     être échangée sur BarterDEX en KMD. Une fois que la valeur
+     sous-jacente est détenue en tant que KMD dans une <KMDaddress>,
+     Jumblr peut terminer son travail. Une fois l'opération terminée,
+     le fichier KMD anonymisé est à nouveau échangé sur BarterDEX
+     contre la crypto-monnaie pertinente non-KMD et est renvoyé à une
+     adresse secrète choisie par l'utilisateur. À l'heure actuelle,
+     alors que BarterDEX en est à ses débuts, nous concentrons nos
+     énergies sur l'amélioration de la convivialité globale de
+     BarterDEX.
+
 **** Capacités futures : Jumblr automatise le processus de négociation BarterDEX pour l'utilisateur
+     À l'avenir, Jumblr sera simplement un client du service BarterDEX
+     lorsqu'il fournira une confidentialité aux crypto-monnaies autres
+     que KMD.
+
+     Lorsqu'un utilisateur active Jumblr pour une pièce non-KMD,
+     Jumblr demandera à BarterDEX d'échanger la pièce non-KMD en KMD
+     transparent en fonction des prix actuels. La valeur sous-jacente
+     étant maintenant dans KMD, le protocole Jumblr exécute la
+     totalité du processus décrit précédemment. Avec la valeur
+     sous-jacente rendue privée, Jumblr demandera à BarterDEX de
+     renvoyer la valeur à la crypto-monnaie choisie par
+     l'utilisateur. Enfin, Jumblr renverra la somme finale à une
+     nouvelle adresse de crypto-monnaie, fournie par l'utilisateur au
+     début du processus.
+
+     En raison des fluctuations du marché, en fonction de la
+     liquidité, il est possible qu'un utilisateur subisse un
+     glissement de la valeur sous-jacente de sa crypto-monnaie non
+     KMD. Bien qu'il soit possible de prédéfinir le commerce sur
+     BarterDEX (éliminant ainsi tout glissement), il n'existe aucune
+     méthode disponible pour prendre un tel arrangement sans divulguer
+     des informations confidentielles. La partie effectuant la seconde
+     partie de l’opération surBarterDEX constituerait un point de
+     défaillance central. Par conséquent, la méthode la plus privée de
+     création de confidentialité non-KMD consiste simplement à faire
+     appel aux fournisseurs de liquidités BarterDEX actifs.
+
 *** Un mot sur les risques inhérents à Jumblr et à l'écosystème de Komodo
+    La pièce de monnaie Komodo (KMD), et donc Jumblr par association,
+    reposent toutes les deux sur les paramètres Zcash présentés par
+    l'équipe Zcash. Les paramètres Zcash sont une forme de technologie
+    "à connaissance nulle". Il s’agit d’une forme puissante de vie
+    privée, et sans doute supérieure à d’autres formes, car elle est
+    effectivement permanente. En s’appuyant sur les paramètres Zcash,
+    nous pouvons utiliser nos ressources créatives pour nous attaquer
+    à d’autres défis technologiques liés à la blockchain, tout en
+    donnant aux membres de l’écosystème de Komodo l’option de la
+    confidentialité.
+
+    Pour créer les paramètres Zcash, les développeurs Zcash d'origine
+    ont dû créer une série de clés qui, une fois combinées, ont créé
+    une clé principale pouvant déverrouiller et verrouiller les
+    paramètres. Après avoir utilisé la clé principale pour créer les
+    paramètres, l'équipe a détruit chaque clé individuelle. L'équipe a
+    mené cette entreprise de manière publique. Nous encourageons les
+    lecteurs intéressés à consulter l'explication "Cérémonie Zcash" et
+    à rechercher d'autres points de vue.
+    
+    Pour résumer brièvement les mesures de sécurité, l’équipe de Zcash
+    a utilisé plusieurs couches de protection, notamment: calcul
+    multipartite, nœuds de calcul dissociés, traces de preuves sur
+    papier, distribution unique du système d’exploitation Linux et
+    destruction physique de chaque système. morceau de matériel qui a
+    tenu une clé individuelle. Les couches de défense qui en
+    résulteraient seraient du plus haut niveau de difficulté pour un
+    étranger de pénétrer. De plus, la méthode de création et de
+    destruction garantissait la sécurité interne du projet, dans la
+    mesure où au moins un membre de l’équipe de Zcash au moins était
+    honnête.
+
+    By our observation, the team performed this endeavor with
+    sufficient competence and  due  diligence.  Furthermore,  given
+    the  nature  of  the  project,  the  longstanding reputation of
+    the Zcash developers, and the modus operandi of their lives’ work,
+    we believe  they  were  properly  motivated  to  perform  the
+    creation  and  destruction  in  a capable and honest manner.
+    Néanmoins, il existe des défenseurs de la vie privée dans le
+    secteur des crypto-monnaies qui entretiennent une certaine
+    suspicion à l'égard de tout projet nécessitant un élément de
+    confiance humaine. Cette suspicion s'étend aux paramètres
+    Zcash. Ces observateurs scrutent en permanence le projet Zcash, à
+    la recherche de plus en plus de processus par lesquels la
+    cérémonie de création aurait pu échouer. Pourtant, bien que
+    diverses théories aient été avancées, aucune défaillance réelle
+    des paramètres Zcash n’a été découverte.
+
+    En adoptant les paramètres Zcash, nous recevons souvent des
+    questions sur leur incidence sur la pièce de monnaie Komodo. La
+    réponse est que la confidentialité dans l'écosystème de Komodo est
+    permanente, indépendamment de toute faute potentielle de la part
+    de l'équipe Zcash. En outre, nous pouvons adopter toutes les mises
+    à jour des paramètres publiées par l’équipe Zcash.
+
+    Dans le cas improbable où une personne pourrait conserver une
+    copie complète de la clé principale, le seul pouvoir dont
+    disposerait le titulaire serait la possibilité de créer de
+    nouveaux fonds privés dans notre système. Ce détenteur pourrait
+    alors échanger cet argent contre de l'argent transparent et
+    rentable. Cela pourrait avoir un impact négatif sur la pièce de
+    monnaie Komodo et il nous faudrait adapter notre plate-forme. Si
+    une erreur dans les paramètres Zcash devait être découverte,
+    l'équipe de Komodo dispose de plusieurs méthodes de secours pour
+    supprimer les paramètres Zcash et les remplacer par un nouvel
+    ensemble de paramètres.
+
+    Though in Komodo we do not see this as a realistic threat, we
+    nevertheless include the  information  here  in  our  white  paper
+    to  provide  complete  transparency  for  any user who seeks to
+    invest their resources in the Komodo project.
+
 *** Jumblr fournit à l'écosystème de Komodo la confidentialité
+    Pour que l'écosystème de Komodo atteigne son plein potentiel,
+    l'option de la confidentialité renforcée doit être disponible pour
+    les utilisateurs de Komodo. Jumblr répond à cette demande.
+
+    Jumblr s'appuie sur BarterDEX, KMD et Iguana Core pour se
+    connecter au Komodo écosystème. La confidentialité fondamentale
+    qu'il offre repose sur la pièce de monnaie KMD, les paramètres
+    Zcash et la technologie zk-SNARK. Des améliorations
+    supplémentaires sont intégrées au processus Jumblr afin de
+    maximiser la confidentialité de l'utilisateur, notamment des
+    protections contre l'attaque par chronométrage et l'attaque avec
+    sac à dos. Grâce à BarterDEX et à Iguana Core, ces fonctions de
+    confidentialité s’appliquent à toute crypto-monnaie connectée à
+    l’écosystème de Komodo. 
+
+    À mesure que de plus en plus d'utilisateurs font partie de
+    l'écosystème de Komodo, ils peuvent travailler ensemble pour
+    améliorer à la fois leur vie privée et celle des autres membres de
+    l'écosystème. Alors que l'écosystème continue de croître, l'équipe
+    de Komodo peut offrir à Jumblr différents niveaux de croissance,
+    notamment l'automatisation du processus Jumblr non-KMD. Nous
+    attendons avec impatience vos commentaires sur cette technologie
+    qui renforce la confidentialité.
+
+
 * Information supplémentaire selon l'écosystème Komodo
 ** Notes finales concernant le projet Komodo
 *** Crypto-monnaies à taux fixe 
@@ -778,6 +1388,14 @@
  11. 
 
 * Footnotes
+
+[fn:9] [[https://z.cash/]]
+
+[fn:8]
+[[https://bitcoinmagazine.com/articles/shuffling-coins-to-protect-privacy-and-fungibility%252Da%252Dnew%252Dtake%252Don%252Dtraditional%252Dmixing%252D1465934826/]]
+
+
+[fn:7] [[https://bitcoin.org/bitcoin.pdf]]
 
 [fn:6] NdT : crowdsourcing
 
