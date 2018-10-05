@@ -505,10 +505,191 @@
   dans la partie IV de ce document.
 
 *** Les défis dans les plateformes ICO actuelles
-*** Faiblesses spécifiques dans le modèle centralisé ICO
-*** Discrimination de tiers via les ICO centralisées
-*** Centralisation des technologies ICO : baleines, pirates, et erreurs humaines
-*** Pirates et erreurs humaines
+**** Faiblesses spécifiques dans le modèle centralisé ICO
+     De nombreuses faiblesses sont présentes dans le processus actuel
+     d’offre initiale de pièces (ICO). Parmi les faiblesses notables
+     figurent la discrimination par des tiers, la manipulation de
+     "baleines", la vulnérabilité au vol et aux erreurs humaines et le
+     manque de vie privée.
+**** Discrimination de tiers 
+     Un entrepreneur cherchant à servir son public cible peut éprouver
+     des difficultés intervention d'un tiers. Les antagonistes peuvent
+     afficher personnels et malveillants quelle que soit la valeur de
+     l’innovation de l’entrepreneur.
+**** Centralisation des technologies ICO : baleines, pirates, et erreurs humaines
+     Au cours des premières étapes de la diffusion d’une blockchain au
+     public, les utilisateurs fortunés et férus de technologie
+     (souvent appelés «baleines») ont un avantage inégal :  ils
+     peuvent rapidement acheter la majorité des pièces de monnaie
+     alors qu’elles sont peu coûteuses. Par la suite, ils peuvent
+     manipuler le prix du marché aux dépens d’adhérents moins établis.
+
+     En outre, les opérations d’investissement d’aujourd’hui sont
+     généralement effectuées en compte séquestre, où les acheteurs
+     doivent virer de l’argent à un seul nœud pour pouvoir le
+     conserver. Cela se produit généralement via un seul site Web et
+     les fonds de crypto-monnaie sont détenus sur un seul serveur. Ils
+     doivent ensuite attendre que les administrateurs de l’ICO
+     vérifient d’abord les transactions et distribuent les
+     pièces. Pendant ce temps, le financement est centralisé et donc
+     vulnérable aux voleurs et aux erreurs humaines.
+
+**** Manque d'intimité
+     Parce que les transactions ICO sont très traçables, il est
+     difficile, voire impossible, d’exécuter des ICO de notre droit de
+     troquer en privé.
+
+*** La discrimination des tiers via les ICO centralisées     
+
+    Une des faiblesses du processus ICO tient paradoxalement à la
+    grande force de la technologie blockchain : sa nature sans
+    frontières. Un pouvoir clé de toute blockchain réside dans le fait
+    que tout être humain capable d’accéder à la technologie peut
+    activer la blockchain, quel que soit son emplacement géographique
+    ou son statut social. Ainsi, n'importe qui peut fournir un autre
+    enregistrement vérifiable de l'historique des transactions, et
+    cette décentralisation fournit un élément crucial de sécurité à la
+    blockchain.
+    
+    Par conséquent, un innovateur ICO peut préférer utiliser une
+    plate-forme blockchain transcendant les barrières créées par
+    l'homme pour protéger ses innovations. La neutralisation des
+    barrières artificielles pourrait faire partie intégrante de la
+    survie de la blockchain, car la décentralisation empêche les
+    acteurs malveillants de créer des frontières subjectives autour
+    des enregistrements de la blockchain, puis d’utiliser l’autorité
+    pour falsifier et manipuler.
+
+    Cela crée toutefois une énigme. En tant que race humaine, nous
+    trouvons également force et émancipation lorsque nous définissons
+    subjectivement nos propres données démographiques pour différentes
+    raisons, qu'il s'agisse de créer des sociétés, des cultures, des
+    communautés, etc. Même si nous trouvons la capacité de créer des
+    données démographiques subjectives utiles, elle contraste avec le
+    concept sans frontière. nature de la technologie blockchain. Les
+    membres d'un groupe démographique peuvent souhaiter participer à
+    un ICO spécifique, mais un groupe démographique peut trouver cela
+    défavorable. Par conséquent, la deuxième partie pourrait tenter
+    d'empêcher les progrès. Le paradoxe réside dans le fait que, pour
+    que le produit sous-jacent de la chaine de blocs sous-jacente
+    conserve son intégrité, il doit servir les deux communautés sans
+    tenir compte des barrières artificielles qui les séparent.
+
+    Le problème s'aggrave encore plus, car nous observons que sur un
+    plan décentralisé Blockchain Platform, un nouveau produit ICO est
+    capable de fonctionner partout où il est possible d'accéder à la
+    technologie sous-jacente. Par conséquent, sur une plate-forme
+    décentralisée, une fois qu'un nouveau produit blockchain est
+    sorti, toute personne appartenant à l'un ou l'autre groupe
+    démographique est désormais en mesure de l'utiliser indépendamment
+    du sentiment général de l'un ou l'autre groupe démographique. Le
+    problème devient d'autant plus grave si les membres d'un groupe
+    concurrent tentent même d'empêcher de manière malveillante une
+    innovation pour des raisons égoïstes. Il est donc impératif que
+    l'innovateur ait la possibilité de se protéger contre des
+    concurrents potentiellement malveillants.
+
+    La nature centralisée globale du processus de l’ICO d’aujourd’hui
+    pose donc problème. Les entrepreneurs qui ne sont pas en mesure de
+    gérer les effets néfastes d’une tierce partie inhibitrice peuvent
+    ne pas être en mesure de réaliser leur potentiel créatif.
+
+*** Centralisation de la technologie ICO : baleines, pirates et erreur humaine    
+    
+    Un autre problème qui afflige les organisations internationales de
+    commerce est que la technologie sur laquelle est basée une
+    organisation internationale de commerce est publié est également
+    centralisé. Cela présente une vulnérabilité aux faiblesses humaines.
+**** Le comportement manipulateur des baleines
+     Pour comprendre ce problème, il faut comprendre que les "nœuds"
+     (dispositifs informatiques qui calculent l’achat et la vente de
+     crypto-monnaies) prennent les commandes des acheteurs ICO l’un
+     après l’autre. Actuellement, les ICO ne sont publiés que sur un
+     seul noeud. Par exemple, l'achat peut s'effectuer via un seul
+     site Web, les fonds collectés étant détenus sur un seul serveur.
+     
+     Le nœud ne pouvant traiter qu’une transaction à la fois, la
+     personne dont la commande arrive en premier recevra un avantage
+     sur la valeur future de la pièce. Si l'acheteur initial est à la
+     fois riche et capable de programmer des "robots" sophistiqués
+     (programmes conçus sur mesure pour automatiser le commerce des
+     cryptomonnaies), la baleine peut acheter une participation
+     majoritaire dans l'offre avant que des personnes moins fortunées
+     ou moins au fait des technologies ne puissent participer.
+     Vous ne pourrez pas aller au bout d'une transaction à la fois, il
+     ne faut pas que la commande arrive en premier, soit un avantage
+     sur la valeur future de la pièce. Si ce sont initialement des
+     programmeurs riches et capables de programmer des "robots"
+     sophistiqués, la baleine peut acheter une participation
+     majoritaire dans avant des personnes moins fortunées ou moins au
+     fait des technologies ne participer.
+
+     Sur notre marché actuel, les personnes qui bénéficieraient le
+     plus d'un ICO sont incapables de participer avant que l'offre ne
+     s'évapore. Pendant ce temps, cette baleine a maintenant un
+     contrôle suffisant sur l’offre globale pour pouvoir jouer le rôle
+     de manipulateur de marché centralisé. L’achat et la vente en
+     grande quantité oblige à des fluctuations favorables à la
+     baleine.
+
+     
+
+**** Pirates et erreurs humaines
+
+     Étant donné que toutes les pièces d'un ICO traitent généralement
+     via un nœud au cours de la période d'achat, toute la fourniture
+     est vulnérable à toute personne ayant accès au nœud. Par
+     conséquent, les agents humains malveillants et maladroits peuvent
+     détruire un ICO. Les données contenant la crypto-monnaie peuvent
+     être endommagées, volées ou simplement perdues par incompétence.
+     
+     Un entrepreneur peut également considérer que, dans le modèle ICO
+     actuel, le financement fourni par les acheteurs ainsi que les
+     pièces ICO que l’entrepreneur a l'intention de vendre restent sur
+     le nœud centralisé pendant une longue période. Ce n’est pas
+     seulement l’un des aspects de l’activité de crowdsourcing qui est
+     en jeu, mais les deux.
+
+     Ce point d'échec central peut être catastrophique pour tous les
+     participants.
+**** Le droit de troquer en privé
+     Enfin, le manque d'options actuelles en matière de
+     confidentialité dans le processus ICO empêche les participants à
+     la blockchain d'acheter dans le cadre de notre droit de troquer
+     en privé. Ce droit d’échange privé de biens et de services
+     s’inscrit dans l’histoire plus loin que l’écrit. En tant
+     qu'espèce, nous avons utilisé ce droit pour nous organiser en
+     communautés, en institutions et même en nations.
+
+     Parmi les avancées les plus significatives de l’art, de la
+     technologie et d’autres projets humains, l’humanité a été créée
+     dans des situations où le créateur avait la sécurité de la vie
+     privée pour explorer, découvrir, commettre des erreurs et
+     apprendre de la sorte.
+
+     Le droit de troquer en privé, cependant, est une menace moderne,
+     car le phénomène monumental et historique récent, "l'Internet de
+     l'information", permet à de nombreux types de personnes de se
+     faire tranquillement et sans inhibition; surveillez les
+     comportements d’achat et de troc d’autres personnes. Ceci est un
+     développement dangereux, car il détruit la vie privée qui permet
+     une grande partie de la croissance personnelle de
+     l’humanité. Nous devons nous réserver le droit de négocier en
+     privé, car nous observons qu’il existe une multitude de façons
+     pour une personne ordinaire d’explorer la croissance personnelle
+     dans un environnement économique.
+
+     Cependant, la nature hautement traçable du modèle d’OIC
+     centralisé actuel est en contradiction directe avec ce besoin
+     humain.
+**** L'industrie de la blockchain a besoin d'une solution, et Komodo présente la sienne 
+     Ensemble, ces problèmes montrent que l'état actuel du marché des
+     OIC est miné par des limitations qui entravent la liberté, la
+     sécurité, l'esprit d'entreprise et même la croissance humaine. Le
+     secteur de la crypto-monnaie a besoin d'une solution à ces
+     problèmes, et Komodo présente une réponse.
+
+     
 ** La solution Komodo 
 *** Les DICO
 *** Le processus de création d'une nouvelle blockchain dans l'écosystème Komodo 
