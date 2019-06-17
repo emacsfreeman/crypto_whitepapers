@@ -1,0 +1,1391 @@
+#+TITLE: [[https://komodoplatform.com/wp-content/uploads/2018/06/Komodo-Whitepaper-June-3.pdf][Papier blanc de la crypto Komodo]]
+#+AUTHOR: Laurent Garnier
+
+* Introduction à Komodo 
+  Le projet Komodo vise à donner aux utilisateurs la liberté de passer
+  par la technologie blockchain. Il existe de nombreuses formes de
+  liberté que Komodo peut offrir, et nous nous concentrons
+  actuellement sur l’autonomisation de deux types d’utilisateurs :
+  l’entrepreneur de la chaîne de blocs et l’investisseur moyen de
+  crypto-monnaie. Ensemble, notre communauté d’entrepreneurs,
+  d’investisseurs et d’autres utilisateurs forment un écosystème
+  économique. 
+
+  Le pilier fondamental de l'écosystème de Komodo est la
+  sécurité. Komodo fournit une forme de sécurité unique et innovante
+  qui est aussi forte que le réseau Bitcoin, mais ne nécessite pas de
+  coût incroyable. Chaque membre de l'écosystème de Komodo bénéficie
+  des avantages de cette sécurité. L'investisseur en dépend pour un
+  usage quotidien. L'entrepreneur compte sur lui pour protéger son
+  innovation blockchain à un coût abordable, même pour les petites
+  entreprises et les startups. 
+
+  Une autre technologie puissante de Komodo est une nouvelle
+  méthode de trading de crypto-monnaies permettant des échanges 
+  directement d’une personne à une autre. C’est un nouveau type 
+  d’«échange décentralisé». Notre échange décentralisé supprime toutes
+  les formes d’intermédiaires, de bons et de services de dépôts 
+  fiduciaires. Il s'appuie sur un concept sous-jacent appelé «échange 
+  atomique» et nous sommes les meneurs de cette technologie.
+
+  Notre bourse décentralisée alimenté par un échange atomique sert à
+  la fois l'investisseur et l'entrepreneur de la chaîne de blocs.
+
+  Concernant l'investisseur, il peut négocier des devises sans avoir à
+  passer par une bourse centralisée, ce qui peut être un processus ardu
+  et même dangereux. Il n'a pas non plus besoin d'utiliser de
+  service de dépôt fiduciaire, de bon d'achat, ni même de pièce 
+  intermédiaire, même pas de Bitcoin. De plus, il n'y a pas de
+  processus d'enregistrement requis, ni de limites de retrait. Nous
+  prenons actuellement en charge environ 95% des crypto-monnaies
+  existantes, y compris les pièces basées sur le protocole Bitcoin,
+  Ethereum et les jetons ERC20 basés sur Ethereum. 
+
+  Pour l'entrepreneur, notre bourse décentralisée permet de lancer de
+  nouveaux produits dans le monde sans l'implication d'
+  intermédiaires. De plus, même les entrepreneurs qui ont déjà
+  construit d’autres projets blockchain en dehors de notre
+  écosystème peuvent facilement mettre leur pièce sur notre bourse
+  décentralisée. La seule exigence est que le produit blockchain ait
+  les éléments de sécurité appropriés au cœur du code de la
+  blockchain. 
+
+  Komodo intègre également de puissantes fonctionnalités de
+  confidentialité dans notre plate-forme. Cela permet à l'investisseur
+  d'échanger et d'acheter des biens et services dans le cadre de son
+  droit à la vie privée. Cela permet également à l'entrepreneur de
+  libérer son produit et de créer des sources de financement auprès
+  d'un public qui préfère conserver cette confidentialité.
+
+  Il existe de nombreuses autres technologies et fonctionnalités dans
+  l'écosystème de Komodo, et nous assistons à une croissance rapide
+  des entrepreneurs et des investisseurs. 
+
+  Ce livre blanc de Komodo propose une discussion approfondie sur les
+  fonctions de sécurité uniques de Komodo, notre bourse décentralisée,
+  la méthode de diffusion des nouveaux produits et nos fonctionnalités
+  de confidentialité natives.
+
+  Nous accueillons les commentaires de nos lecteurs. Si vous avez des
+  questions ou des préoccupations concernant la lecture de ce
+  document, veuillez contacter directement notre équipe. Vous pouvez
+  trouver nos coordonnées sur notre site Web d'accompagnement : [[https://komodoplatform.com/]]
+
+* Méthode de sécurité Komodo : preuve de travail différé (DPOW : Delayed Proof Of Work)
+** Une discussion fondamentale de la sécurité d'une blockchain
+   La forme de sécurité de Komodo s'appelle la technologie de preuve
+   de travail différée (dPoW). Il s'appuie sur la forme la plus
+   avancée de sécurité de la chaîne de blocs existante, la technologie
+   de preuve de travail (PoW). Cette dernière forme de sécurité est la
+   méthode utilisée par le réseau Bitcoin. Pour comprendre la valeur
+   de la sécurité dPoW de Komodo, nous devons d'abord expliquer
+   comment PoW fonctionne et pourquoi il s'agit de la méthode la plus
+   sécurisée de maintenance d'une blockchain décentralisée. Nous
+   devons également examiner les lacunes de PoW, afin que nous
+   puissions comprendre la nécessité de la méthode dPoW de Komodo et
+   les avantages qu'elle apporte à la communauté de la blockchain. 
+
+   Pour comprendre comment fonctionne la technologie PoW, nous
+   commençons par expliquer les racines qui font du protocole Bitcoin
+   un moyen viable de transférer de la valeur en toute sécurité. 
+
+
+*** Qu'est-ce qu'un mécanisme de consensus ?
+**** Le problème de "double dépense"
+
+     La création de la technologie de la chaîne de blocs découle des
+     premières études mathématiques sur la cryptographie en utilisant la
+     technologie informatique. 
+
+     L'un de ces exemples concerne le dispositif de codage de
+     l'information "Enigma", inventé par les Allemands à la fin de la
+     Première Guerre mondiale. Alan Turing, un agent de renseignement 
+     britannique , a battu le dispositif Enigma en inventant le
+     premier «ordinateur numérique» au monde. Cela a fourni suffisamment
+     de puissance de calcul pour casser le cryptage d'Enigma et découvrir 
+     les communications secrètes allemandes [fn: 1].
+
+     Cette première affaire de cryptage a déclenché une course à
+     travers le monde pour développer une myriade de formes de
+     transferts sécurisé des informations d'un pays à l'autre via la
+     technologie informatique. Bien que chaque nouvelle forme de
+     chiffrement informatique offrait plus d’avantages, il restait un 
+     problème qui empêchait le chiffrement d’être utile pour transférer
+     non seulement des informations, mais aussi une valeur financière.
+
+     Ce problème est connu sous le nom de problème de «double
+     dépense». Le problème réside dans la capacité des ordinateurs à
+     dupliquer sans cesse les informations. Dans le cas de la valeur
+     financière, il y a trois choses importantes à noter: qui possède
+     une valeur spécifique; l'heure à laquelle la personne possède
+     cette valeur; l'adresse du portefeuille dans lequel réside la
+     valeur. Lors du transfert de valeur financière d’une personne à
+     une autre, il est essentiel que si la personne A a envoyé de
+     l’argent à la personne B, la personne A ne soit pas en mesure de
+     reproduire le même montant et de le renvoyer à la personne C. 
+
+     Le protocole Bitcoin[fn:2], inventé par une personne anonyme (ou 
+     plusieurs personnes) revendiquant le nom de Satoshi Nakamoto, a
+     résolu le problème des doubles dépenses. Le code mathématique et
+     informatique sous-jacent est à la fois très complexe et innovant.
+     Pour les besoins de cet article, nous allons seulement nous 
+     concentrer sur l'unique aspect du protocole Bitcoin qui résout le
+     problème de double dépense: le mécanisme de consensus. 
+
+     
+
+**** Le mécanisme de consensus fournit une sécurité contre une "double dépense"
+     Le mécanisme de consensus inventé par Nakamoto est peut-être
+     l’une des innovations les plus puissantes du XXIe siècle. Son
+     invention permet à des appareils individuels de fonctionner
+     ensemble, en utilisant des niveaux de cryptage élevés, de suivre
+     en toute sécurité et avec précision la propriété de la valeur
+     numérique (qu'il s'agisse de ressources financières, de biens
+     immobiliers numériques, etc.). Il effectue cela d'une manière qui
+     ne permet à personne sur le même réseau (c'est-à-dire Internet)
+     de dépenser deux fois la même valeur. 
+
+     Supposons qu'un utilisateur, Alice, indique dans son portefeuille
+     numérique qu'elle souhaite envoyer de l'argent crypto-monnaie à un
+     ami. L’ordinateur d’Alice rassemble maintenant plusieurs
+     informations, y compris les autorisations et mots de passe
+     nécessaires, le montant que Alice veut dépenser et l’adresse de
+     réception du portefeuille de son ami. Toutes ces informations
+     sont rassemblées dans un paquet de données, appelé "transaction",
+     et l’appareil d’Alice envoie la transaction sur Internet. 
+
+     Il existe plusieurs types d’appareils qui interagissent avec la
+     transaction d’Alice sur Internet. Ces périphériques partageront
+     les informations sur les transactions avec d'autres périphériques
+     prenant en charge le réseau de la crypto-monnaie. Pour cette
+     discussion, nous devons seulement nous concentrer sur un type de
+     périphérique: un mineur de crypto-monnaie. 
+
+     Note : Les descriptions suivantes sont des explications
+     simplifiées d'un processus byzantin vraiment complexe. Il existe
+     de nombreuses autres stratégies que les mineurs de crypto-monnaie
+     conçoivent pour dépasser leur concurrence, et ces stratégies
+     peuvent varier considérablement.
+
+
+**** Un mineur se met en compétition pour ajouter des blocs à l'historique du réseau pour obtenir une récompense en retour
+***** Etape 1 : Préparation de l'information préliminaire
+
+      Cet appareil effectue une activité appelée "minage" de
+      crypto-monnaie. Concentrons-nous maintenant sur un périphérique
+      de minage qui capture les données de transaction brutes
+      d’Alice. Cet appareil appartient à un mineur averti, nommé Bob,
+      qui souhaite ajouter la transaction d’Alice à l’historique
+      permanent du réseau Bitcoin. 
+
+      Si Bob est la première personne à traiter correctement la
+      transaction d’Alice, il recevra une récompense financière. Un
+      élément clé de cette récompense est un pourcentage basé sur le
+      montant total de la transaction d’Alice. 
+***** Le Mempool est la collection de toutes les transactions brutes en attente de traitement
+      Bob n’a pas qu'une seule transaction à effectuer. Il a
+      plutôt un pool complet de transactions brutes, créées par de
+      nombreuses personnes sur Internet. Les données brutes de chacune
+      de ces transactions se trouvent dans la banque de mémoire locale
+      du dispositif de minage de chaque mineur, attendant les
+      commandes du mineur. Les mineurs appellent cette pool de
+      transactions, le "mempool". La plupart des mineurs ont des
+      systèmes automatisés pour déterminer le processus de sélection
+      des transactions, en fonction du bénéfice estimé.
+***** Création des hashs de transaction
+      Après que Bob ait fait ses choix quant aux transactions qu’il
+      tentera de miner (et nous supposons qu'il inclut la transaction
+      d'Alice), l'appareil de minage de Bob commence alors une série
+      de calculs. 
+
+      Son appareil prendra d’abord les données brutes de chaque
+      transaction et utilisera des formules mathématiques pour
+      compresser la transaction dans un format plus petit et plus
+      facile à gérer. Cette nouvelle forme est appelée un "hash de
+      transaction"[fn:3]. Par exemple, le hachage de transaction
+      d’Alice pourrait ressembler à ceci : 
+
+      #+BEGIN_CENTER
+      *b1fea52486ceoc62bb442b53oa3f0132b826c74e473d1f2c220bfa78111c5082*
+      #+END_CENTER
+
+      Bob préparera potentiellement des centaines de hachages de
+      transaction avant de passer à l'étape suivante. Une chose
+      importante à comprendre à propos de la compression des données
+      dans le protocole Bitcoin, y compris le hachage de transaction
+      ci-dessus, est que les calculs ci-après obéissent à un principe
+      appelé, l'effet de cascade. 
+***** L'effet de cascade : la modification d'un bit de données modifie le résultat entier
+      L'effet de cascade signifie simplement que si Bob tentait de
+      modifier le plus petit bit des données brutes, que ce soit pour
+      tricher, par erreur ou pour toute autre raison, le
+      hachage de la transaction changerait radicalement. De cette
+      manière, les formules mathématiques du protocole Bitcoin
+      garantissent que Bob ne peut pas créer un historique incorrect. 
+
+      Si Bob tentait de créer un hachage de transaction incorrect, les
+      autres mineurs du réseau pourraient utiliser les données de
+      transaction brutes d’Alice, effectuer les calculs de base du
+      protocole Bitcoin, et découvrir immédiatement que les hashes de
+      Bob sont incorrects. Ainsi, tous les périphériques du réseau 
+      rejetteraient les tentatives incorrectes de Bob et l’empêcheraient
+      de réclamer des récompenses. 
+***** Première étape (suite) : fin des calculs préliminaires
+      Maintenant, en utilisant plus de formules mathématiques, Bob
+      prend les hachages de transaction qu'il essaie de traiter et les
+      compresse en un nouveau morceau de données gérable. 
+
+      C'est appelé la "racine de merkel". Elle représente toutes les
+      transactions que Bob espère traiter et dont il espère obtenir
+      une récompense. La racine de merkle de Bob pourrait ressembler à
+      ceci
+
+      #+BEGIN_CENTER
+      *7dac2c5666815c17a3b36427de37bb9d2e2c5ccec3f8633eb91a4205cb4c10*
+      #+END_CENTER
+      
+
+      Enfin, Bob rassemblera les informations fournies par le dernier
+      mineur qui a été ajouté à l’historique de la blockchain
+      permanente. Cette information s'appelle "l'en-tête du bloc". Il
+      contient une grande quantité de données complexes et nous
+      n’entrerons pas dans tous les détails. Le seul élément important
+      à noter est que l'en-tête de bloc donne à Bob des indices sur la
+      manière d'ajouter correctement le prochain élément d'information
+      à l'historique permanent de Bitcoin. Un de ces indices pourrait
+      ressembler à ceci :
+
+      #+BEGIN_CENTER
+      *"difficulty" : 1.00000000*
+      #+END_CENTER
+
+      Nous reviendrons là-dessus plus tard.
+
+      Ayant toutes ces informations, Bob est presque prêt. Sa
+      prochaine étape est où le vrai le défi commence. 
+***** Etape deux : la course pour arriver premier
+      L’ordinateur de Bob va collecter toutes les informations
+      ci-dessus et les collecter dans un ensemble de données appelé
+      "bloc". Le minage de ce bloc et l'ajout à la liste des blocs
+      qui ont précédé est le processus de création d'une "chaîne" de
+      blocs, d'où le nom de l'industrie "blockchain". 
+
+      Cependant, ajouter des blocs à la blockchain n'est pas si
+      simple. Bien que Bob ait déjà tout préparé correctement, le
+      protocole Bitcoin ne donne pas encore à Bob le droit d'ajouter
+      son bloc proposé à la chaîne. 
+
+      Le mécanisme de consensus est conçu pour forcer les mineurs à se
+      battre pour ce droit. En exigeant que les mineurs travaillent
+      pour le droit de miner un nouveau bloc valide, la concurrence
+      se propage à travers le réseau. Cela offre de nombreux
+      avantages, notamment le temps nécessaire aux transactions des
+      utilisateurs (comme Alice) pour se diffuser dans le monde entier,
+      offrant ainsi un niveau de décentralisation au réseau.
+      
+      Par conséquent, bien que Bob préfère créer immédiatement un
+      nouveau bloc valide et ainsi collecter sa récompense, il ne le peut
+      pas. Il doit gagner la compétition en effectuant le bon travail
+      en premier. C'est la source du titre du mécanisme de consensus
+      du protocole Bitcoin, "Proof of Work" (PoW)[fn:4]. 
+
+      Le concours que doit remporter Bob est d'être le premier à
+      trouver la réponse à un simple puzzle mathématique conçu par
+      Satoshi Nakamoto. Pour résoudre le casse-tête, Bob devine des
+      nombres aléatoires jusqu'à ce qu'il découvre un nombre
+      correct. Le nombre correct est déterminé par les formules
+      complexes internes du mécanisme de consensus et ne peut être
+      découvert par aucun autre moyen qu'en devinant. Les mineurs de
+      bitcoins appellent ce numéro un "nonce", qui est l'abréviation
+      d'un "numéro" que vous utilisez "une fois". "[fn:5] 
+
+      L'appareil de minage de Bob fera des suppositions aléatoires du
+      nonce, l'une après l'autre, jusqu'à ce qu'un nonce correct soit
+      trouvé. À chaque tentative, Bob insérera d'abord le nonce
+      proposé dans le reste de son bloc. Pour savoir si sa supposition
+      est correcte, il utilisera ensuite des formules mathématiques
+      (comme celles qu’il a utilisées précédemment) pour compresser sa
+      tentative dans un "hash de bloc".
+
+      Un hachage de bloc est une petite forme de données gérable
+      qui représente l’historique complet de la chaîne de blocs de
+      Bitcoin et toutes les informations du bloc proposé par Bob. Un
+      hash de bloc peut ressembler à ceci :
+
+      #+BEGIN_CENTER
+      *oooooooooo19d6689co85ae165831e934ff763ae46a2a6c172b3f1b6oa8ce*
+      #+END_CENTER
+
+      Rappelez-vous maintenant l'Effet de Cascade, et comment il indique
+      que la modification d'un petit nombre dans les données avant
+      d'effectuer les calculs mathématiques crée un résultat très
+      différent.
+
+      Puisque Bob inclut continuellement de nouvelles suppositions au
+      nonce à chaque calcul d'un hash de bloc, chaque tentative de
+      hash de bloc produira une séquence de nombres.
+
+      Les mineurs du réseau Bitcoin savent quand un mineur, tel que
+      Bob, résout le problème. en observant les indices fournis
+      précédemment. Rappelez-vous que la dernière fois qu'un mineur a
+      ajouté des données à la blockchain, il a fourni ces indices dans
+      son en-tête de bloc. L'un des indices de l'en-tête de bloc
+      précédent peut ressembler à ceci :      
+
+      #+BEGIN_CENTER
+      *"difficulty" : 1.00000000*
+      #+END_CENTER
+
+      Ce détail, "difficulty", indique simplement aux mineurs combien
+      de zéros devraient figurer au début du prochain hachage de bloc
+      valide. Lorsque le niveau de difficulté est le niveau affiché
+      ci-dessus, il indique aux mineurs qu'il doit y avoir exactement
+      dix zéros. 
+
+      Observez de nouveau le hachage de bloc de Bob, créé après avoir
+      deviné un nonce, en ajoutant ce nonce proposé dans son bloc et
+      en exécutant les formules mathématiques suivantes :
+
+      #+BEGIN_CENTER
+      *000000000019d6689co85ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f*
+      #+END_CENTER
+
+      Le hachage de bloc ci-dessus a dix zéros au début, ce qui
+      correspond au nombre de zéros dans le niveau de difficulté.
+
+      Par conséquent, le hash proposé par Bob est correct. Cela doit
+      signifier qu'il a deviné un nonce correct. Tous les mineurs du
+      réseau peuvent prouver que Bob était correct en prenant toutes
+      les mêmes informations à partir de leurs mempools, en ajoutant
+      le nonce de Bob et en effectuant les calculs mathématiques. Ils
+      recevront le même résultat et par conséquent, Bob est le gagnant
+      de cette manche.
+
+      En revanche, en raison de l’Effet de Cascade, si la tentative de
+      nonce de Bob avait produit un hachage de bloc avec le nombre
+      incorrect de zéros au début, son hachage de bloc serait
+      invalide. Le réseau ne lui donnerait pas le droit d'ajouter un
+      hachage de bloc incorrect au réseau et tous les mineurs
+      continueraient à chercher. 
+
+***** Etape trois : Bob trouve le nonce
+
+      Une fois qu'un mineur découvre un nonce qui produit un hachage
+      de bloc valide, le mineur a "trouvé un nouveau bloc" et peut
+      envoyer le signal sur Internet. Le mécanisme de consensus
+      fonctionnant sur tous les autres appareils de minage peut vérifier
+      lui-même les calculs. Une fois vérifié, le mécanisme de
+      consensus accorde au mineur le droit d'ajouter le bloc proposé à
+      la blockchain et de recevoir la récompense. 
+
+      Revenons à la machine de Bob, ayant juste deviné un nonce
+      correct, et tenant ainsi un hachage de bloc valide. La machine
+      de Bob envoie instantanément les informations gagnantes sur
+      Internet, et Bob collecte sa récompense sur le réseau Bitcoin. 
+
+      Tous les autres mineurs doivent se réajuster. Auparavant, ils
+      cherchaient le nonce correct basé sur les informations de
+      l'en-tête de bloc précédent. Cependant, le nouveau bloc valide
+      de Bob inclut un nouvel en-tête de bloc. Tous les autres mineurs
+      du réseau abandonnent leur travail actuel, adoptent le nouvel
+      en-tête de bloc de Bob, effectuent de nombreux calculs dans
+      leurs données sous-jacentes et commencent leur recherche du
+      prochain nonce. 
+
+      Le protocole Bitcoin ne présente aucune sympathie pour les
+      efforts inutiles d’un mineur. Supposons qu'une autre machine du
+      réseau essaie également de miner la transaction d’Alice et
+      qu’elle se soit inclinée devant Bob dans la course. Seul Bob
+      gagne la récompense de la transaction d’Alice et l’autre mineur
+      ne reçoit rien en échange de ses coûts et de son temps.
+      
+      Pour Alice, ce processus semble simple. Elle a d'abord indiqué
+      l'adresse de portefeuille de son amie et envoyé la
+      crypto-monnaie. Après un certain temps, son amie a reçu
+      l'argent. Alice peut ignorer le processus byzantin des mineurs
+      entre ces deux événements. Alice ne s'en rend peut-être pas
+      compte, mais le mécanisme de consensus de la preuve de travail
+      constitue le fondement de la sécurité sur lequel elle s'appuie.
+      
+
+** La preuve de travail est la forme la plus sécurisée des mécanismes de consensus
+*** La vitesse et la puissance sont l'essence
+**** L'effet de réseau : la capacité de Bitcoin à dominer commence
+*** La règle de la chaîne la plus longue : la "recette secrète" de la domination PoW (Proof of Work: preuve de travail)
+**** Les effets simples de la règle de la chaîne la plus longue
+**** Une Fable Sur Deux Blockchains
+**** Un Conflit d’Intérêt Interne Surgit Au Sein Du Réseau Bitcoin
+**** La Règle De La Chaîne La Plus Longue : l’Historique Le Plus Long Gagne
+*** La méthode “simple” pour détruire un réseau PoW: l’attaque des 51%
+*** La taille est une autre raison derrière le succès actuel de Bitcoin parmi les réseaux PoW
+*** La méthode "dure" pour détruire un réseau PoW : l'attaque de la génèse (Genesis Attack)
+**** Une attaque de la génèse sur le réseau Bitcoin
+**** Les dangers plus réalistes de l'attaque de la génèse
+*** Les problèmes financiers et environnementaux avec tous les réseaux PoW
+**** Les réseaux PoW sont coûteux
+**** Les mineurs sont libres de miner d'autres réseaux
+**** Le principal mécanisme de consensus alternatif : preuve de part ou preuve d'enjeu (Proof of Stake)
+**** Les risques de sécurité et les défauts de PoS
+**** Un résumé du mécanisme de consensus PoW
+** La solution Komodo
+*** Résumé du mécanisme de consensus sur la preuve de travail différée (dPoW)
+**** Une note sur la technologie Iguana Core de Komodo
+**** Une brève discussion sur la sécurité assurée par les noeuds authentificateurs
+*** Le processus d'authentification
+**** Comprendre les incitations économiques et sécuritaires dans le réseau dPoW Komodo
+*** Mesures de protection de Komodo en action 
+**** Les authentifications fournissent une défense contre l'attaque des 51% et l'attaque de la genèse.
+*** Le mécanisme de consensus dPoW est inhérent à tous les actifs des chaînes Komodo
+
+* Les ICO décentralisées (DICO : Decentralized Initial Coin Offering)
+  
+** Résumé des DICO
+
+     Il y a un grand pouvoir dans l'idée que toute personne,
+  indépendamment de sa nationalité, de ses croyances ou de ses
+  antécédents, puisse obtenir des fonds pour innover et prospérer. Un
+  principe fondamental de la technologie de la chaîne de blocs est la
+  «décentralisation». En décentralisant les systèmes, nous réduisons
+  le nombre de points de contrôle pouvant être compromis et
+  manipulés. La décentralisation joue un rôle plus commun dans notre
+  nouvelle économie des crypto-monnaies, mais il y a un domaine du
+  marché qui reste centralisé et vulnérable: l'offre initiale de
+  pièces (ICO). L'industrie des crypto-monnaies a besoin d'une
+  solution et Komodo présente une réponse avec notre offre de pièces
+  initiale décentralisée (dICO).
+
+  Dans le modèle ICO commun d’aujourd’hui, le niveau élevé de
+  centralisation crée de nombreux problèmes. Des tiers peuvent bloquer
+  ou manipuler les efforts des entrepreneurs pour innover et
+  prospérer. L’emplacement centralisé de la libération du produit de
+  la blockchain ICO est vulnérable, permettant aux baleines, aux
+  pirates informatiques et aux erreurs humaines de corrompre ou de
+  détruire les efforts d’un entrepreneur. L'expérience négative des
+  utilisateurs dans ces situations peut également avoir un impact sur
+  la perception et l'adoption de la crypto-monnaie. En outre, le
+  caractère traçable d’une ICO empêche la société de recourir à la
+  production participative[fn:6] et aux achats dans le cadre de son
+  droit inhérent à échanger en privé.
+
+  Le modèle dICO, créé par le projet Komodo, surmonte ces défis. Il
+  fournit la technologie nécessaire pour créer et publier un produit
+  blockchain avec le plein pouvoir de la décentralisation.
+
+  Les entrepreneurs qui s’appuient sur notre plate-forme commencent
+  par créer une chaîne d’actifs et notre technologie simplifie ce
+  processus. Il suffit d'installer le logiciel nécessaire, d'exécuter
+  quelques commandes sur une invite de commande, puis d'établir une
+  connexion entre deux ou plusieurs périphériques compatibles
+  Komodo. La technologie de base de Komodo effectuera le reste du
+  travail nécessaire pour créer une blockchain totalement
+  indépendante, dotée d’un ensemble de fonctionnalités Komodo.
+
+  Notre technologie dPoW est un principe clé, comme expliqué
+  dans la partie I. dPoW fournit la sécurité nécessaire pour protéger
+  l'intégrité de la blockchain. L'utilisation de dPoW est facultative,
+  et comme les chaînes d'actifs dans l'écosystème de Komodo sont
+  indépendantes par nature, les entrepreneurs peuvent interrompre les
+  services dPoW à volonté.
+
+  Ayant ainsi créé la blockchain, l'entrepreneur utilise alors notre
+  système d'échange décentralisé pour libérer le projet au monde de
+  manière décentralisée. Notre échange décentralisé s'appelle
+  BarterDEX et est expliqué en détail dans la partie III de cet
+  article. BarterDEX étant un échange décentralisé, et grâce à notre
+  technologie d'échange atomique (également expliquée dans la partie
+  III), aucun manipulateur tiers ne peut empêcher l’entrepreneur de
+  mener des activités innovantes et de participation à la production.
+
+  Grâce à notre technologie de confidentialité, Jumblr, les
+  participants à la dICO peuvent acheter le produit dans le cadre de leur
+  droit inhérent à l'échange en privé. Une explication détaillée de
+  Jumblr et de sa méthode de protection de la vie privée est fournie
+  dans la partie IV de ce document.
+
+*** Les défis dans les plateformes ICO actuelles
+**** Faiblesses spécifiques dans le modèle centralisé ICO
+     De nombreuses faiblesses sont présentes dans le processus actuel
+     d’offre initiale de pièces (ICO). Parmi les faiblesses notables
+     figurent la discrimination par des tiers, la manipulation de
+     "baleines", la vulnérabilité au vol et aux erreurs humaines et le
+     manque de vie privée.
+**** Discrimination de tiers 
+     Un entrepreneur cherchant à servir son public cible peut faire face
+     aux interventions nuisibles d'un tiers. Les antagonistes peuvent
+     présenter des intentions personnelles et malveillantes quelle que soit
+     la valeur de l’innovation de l’entrepreneur.
+**** Centralisation des technologies ICO : baleines, pirates, et erreurs humaines
+     Au cours des premières étapes de la diffusion d’une blockchain au
+     public, les utilisateurs fortunés et férus de technologie
+     (souvent appelés «baleines») ont un avantage inégal :  ils
+     peuvent rapidement acheter la majorité des pièces alors qu’elles sont peu
+     coûteuses. Par la suite, ils peuvent manipuler le prix du marché aux dépens
+     de participants moins établis.
+
+     En outre, les opérations d’investissement d’aujourd’hui sont
+     généralement effectuées en enscrow, où les acheteurs
+     doivent virer de l’argent à un seul nœud. Cela se produit 
+     généralement via un seul site Web et les fonds en crypto-monnaies
+     sont sur un seul serveur. Ils doivent ensuite attendre que les
+     administrateurs de l’ICO vérifient d’abord les transactions et
+     distribuent les pièces. Pendant ce temps, le financement est
+     centralisé et donc vulnérable aux voleurs et aux erreurs humaines.
+
+**** Manque d'intimité
+     Comme les transactions ICO sont facilement traçables, il est
+     difficile, voire impossible, d’exécuter des ICO en utilisant notre
+     droit à échanger en privé.
+
+*** La discrimination des tiers via les ICO centralisées     
+
+    Une des faiblesses du processus ICO tient paradoxalement à la
+    grande force de la technologie blockchain : sa nature sans 
+    frontères. Un pouvoir clé de toute blockchain réside dans le fait
+    que tout être humain capable d’accéder à la technologie peut
+    activer la blockchain, quel que soit son emplacement géographique
+    ou son statut social. Ainsi, n'importe qui peut fournir un autre
+    enregistrement vérifiable de l'historique des transactions, et
+    cette décentralisation fournit un élément crucial de sécurité à la
+    blockchain.
+    
+    Par conséquent, un innovateur ICO peut préférer utiliser une
+    plate-forme blockchain transcendant les barrières créées par
+    l'homme pour protéger ses innovations. La neutralisation des
+    barrières artificielles pourrait faire partie intégrante de la
+    survie de la blockchain, car la décentralisation empêche les
+    acteurs malveillants de créer des frontières subjectives autour
+    des enregistrements de la blockchain, puis d’utiliser leur autorité
+    pour la falsifier et la manipuler.
+
+    Cela crée toutefois une énigme. En tant que race humaine, nous
+    trouvons également notre force et notre émancipation lorsque nous
+    définissons subjectivement nos propres données démographiques pour
+    différentes raisons, qu'il s'agisse de créer des sociétés, des
+    cultures, des communautés, etc. Même si nous trouvons la capacité
+    de créer des données démographiques subjectives utiles, elle
+    contraste avec le concept sans frontière de la technologie blockchain.
+    Les membres d'un groupe démographique peuvent souhaiter participer à
+    un ICO spécifique, mais un groupe démographique peut trouver cela
+    défavorable. Par conséquent, la deuxième partie pourrait tenter
+    d'empêcher les progrès.Le paradoxe réside dans le fait que, pour
+    que le produit sous-jacent de la chaine de blocs conserve son
+    intégrité, il doive servir les deux communautés sans tenir compte
+    des barrières artificielles qui les séparent.
+
+    Le problème s'aggrave encore plus, car nous observons que sur un
+    une plate-forme de chaine de blocs décentralisée, un nouveau produit
+    ICO est capable de fonctionner partout où il est possible d'accéder
+    à la technologie sous-jacente. Par conséquent, sur une plate-forme
+    décentralisée, une fois qu'un nouveau produit blockchain est
+    sorti, toute personne appartenant à l'un ou l'autre groupe
+    démographique est désormais en mesure de l'utiliser indépendamment
+    du sentiment général de l'un ou l'autre groupe démographique. Le
+    problème devient d'autant plus grave si les membres d'un groupe
+    concurrent tentent d'empêcher de manière malveillante une
+    innovation pour des raisons égoïstes. Il est donc impératif que
+    l'innovateur ait la possibilité de se protéger contre des
+    concurrents potentiellement malveillants.
+
+    La nature centralisée globale du processus de l’ICO actuel pose donc
+    problème. Les entrepreneurs qui ne sont pas en mesure de gérer les
+    effets néfastes d’une tierce partie inhibitrice peuvent ne pas être
+    en mesure de réaliser leur potentiel créatif.
+
+*** Centralisation de la technologie ICO : baleines, pirates et erreur humaine    
+    
+    Un autre problème qui afflige les ICO est que la technologie sur
+    laquelle est basée une ICO est également centralisée. Cela présente
+    une vulnérabilité aux faiblesses humaines.
+**** Le comportement manipulateur des baleines
+     La centralisation du point de vente crée un terrain de jeu inégal
+     en faveur de riches utilisateurs férus de technologie (appelés
+     «baleines» dans la communauté des crypto-monnaies). Pour comprendre
+     ce problème, il faut comprendre que les "nœuds" (dispositifs
+     informatiques qui calculent l’achat et la vente de crypto-monnaies)
+     prennent les commandes des acheteurs ICO l’une après l’autre.
+     Actuellement, les ICO ne sont réalisées que sur un seul noeud. Par
+     exemple, l'achat peut s'effectuer via un seul site Web, les fonds 
+     collectés étant détenus sur un seul serveur.
+     
+     Le nœud ne pouvant traiter qu’une transaction à la fois, la
+     personne dont la commande arrive en premier recevra un avantage
+     sur la valeur future de la pièce. Si l'acheteur initial est à la
+     fois riche et capable de programmer des "robots" sophistiqués
+     (programmes conçus sur mesure pour automatiser le trading des
+     crypto-monnaies), la baleine peut acheter une participation
+     majoritaire dans l'offre avant que des personnes moins fortunées
+     ou moins au fait des technologies ne puissent participer.
+
+     Sur notre marché actuel, les personnes qui bénéficieraient le
+     plus d'une ICO sont incapables de participer avant que l'offre ne
+     s'évapore. Pendant ce temps, cette baleine dispose  d'un contrôle
+     suffisant sur l’offre globale pour pouvoir jouer le rôle de
+     manipulateur de marché centralisé. L’achat et la vente en grande
+     quantité génère des fluctuations favorables à la baleine.
+
+     
+
+**** Pirates et erreurs humaines
+
+     Étant donné que toutes les pièces d'une ICO sont traitées
+     généralement via un nœud au cours de la période d'achat, toute
+     la fourniture est vulnérable à toute personne ayant accès au nœud.
+     Par conséquent, les agents humains malveillants et maladroit
+     peuvent détruire une ICO. Les données contenant la crypto-monnaie
+     peuvent être endommagées, volées ou simplement perdues par
+     incompétence.
+     
+     Un entrepreneur peut également considérer que, dans le modèle ICO
+     actuel, le financement fourni par les acheteurs ainsi que les
+     pièces ICO que l’entrepreneur a l'intention de vendre restent sur
+     le nœud centralisé pendant une longue période. Ce n’est pas
+     seulement l’un des aspects de l’activité de crowdsourcing qui est
+     en jeu, mais les deux.
+
+     Ce point d'échec central peut être catastrophique pour tous les
+     participants.
+**** Le droit d'échanger en privé
+     Enfin, le manque d'options actuelles en matière de
+     confidentialité dans le processus ICO empêche les participants 
+     d'acheter dans le cadre de notre droit à échanger en privé.
+     Ce droit d’échange privé de biens et de services s’inscrit dans
+     l’histoire plus loin que l’écrit. En tant qu'espèce, nous avons
+     utilisé ce droit pour nous organiser en communautés, en
+     institutions et même en nations.
+
+     Parmi les avancées les plus significatives de l’art, de la
+     technologie et d’autres projets humains, l’humanité a été créée
+     dans des situations où le créateur avait la sécurité de la vie
+     privée pour explorer, découvrir, commettre des erreurs et
+     apprendre de la sorte.
+
+     Le droit d'échanger en privé, cependant, est une menace moderne,
+     car le phénomène monumental et historique récent, "l'Internet de
+     l'Information", permet à de nombreux types de personnes surveiller
+     tranquillement et sans inhibition;  les comportements d’achat et
+     les échanges d’autres personnes. Ceci est un développement
+     dangereux, car il détruit la vie privée qui permet une grande
+     partie de la croissance personnelle de l’humanité. Nous devons
+     nous réserver le droit d'échanger en privé, car nous observons
+     qu’il existe une multitude de façons pour une personne ordinaire
+     d’explorer la croissance personnelle dans un environnement économique.
+
+     Cependant, la nature hautement traçable du modèle ICO
+     centralisé actuel est en contradiction directe avec ce besoin
+     humain.
+**** L'industrie de la blockchain a besoin d'une solution, et Komodo présente la sienne 
+     Ensemble, ces problèmes montrent que l'état actuel du marché des
+     ICO est miné par des limitations qui entravent la liberté, la
+     sécurité, l'esprit d'entreprise et même la croissance humaine. Le
+     secteur de la crypto-monnaie a besoin d'une solution à ces
+     problèmes, et Komodo présente une réponse.
+
+     
+** La solution Komodo 
+*** L’Offre Initiale (ICO) Décentralisée
+*** Le processus de création d'une nouvelle blockchain dans l'écosystème Komodo 
+**** La première commande pour créer une nouvelle pièce 
+*** Les fonctionnalités de la nouvelle chaîne d'actif
+*** Générer et miner les nouvelles pièces
+**** L'approvisionnement total en pièces est distribué dans le bloc de la génèse
+*** L'authentification  vers la chaîne principale de Komodo
+*** La distribution des pièces 
+**** Les Essais De La Méthode De l’ICO Centralisée
+*** Entrer dans les dICO
+**** Alimenté par les technologies Komodo BarterDEX et Jumblr
+**** Les nombreuses solutions du modèle dICO: la sécurité, la confidentialité, la décentralisation et la liberté.
+* Barterdex place de marché décentralisée, la puissance de l'échange atomique de Komodo
+** Résumé (BarterDEX)
+*** Introduction
+**** Les débuts difficiles des échanges décentralisés
+**** BarterDEX : une solution complète
+**** Améliorations récentes dans BarterDEX
+*** Technologie BarterDEX
+**** Correspondance des ordres d'achat et de vente
+**** Correspondance des ordres avec les nœuds à relais complet et sans relais
+**** La technologie Jumblr ajoute de l'intimité
+**** Iguana Core fournit la base de notre fonctionnalité "adresse intelligente ("Smart Address")
+*** Les UTXO : un concept insaisissable, mais fondamental.
+**** Comparaison entre les UTXO et les monnaies fiat
+**** Compréhension des crypto-monnaies et de leurs UTXOs
+*** Trading sur BarterDEX 
+**** Comment BarterDEX traite les ordres d'achat et les UTXOs
+*** Explications détaillées du processus BarterDEX
+**** Echanges atomiques sur le Komodo BarterDEX
+**** Introduction, Alice et Bob
+**** Alice et Bob font un marché
+**** Mesures incitatives et dissuasives pour maintenir un bon comportement
+**** Détails supplémentaires sur l'échange atomique BarterDEX
+*** Une explication plus détaillée du processus de connexion d'échange atomique
+**** Les frais DEX : <dexfee>
+**** L'API BarterDEX
+**** Une brève discussion sur le futur de BarterDEX
+* Jumblr la fonctionnalité native de Komodo pour la vie privée
+** Résumé (Jumblr)
+   Jumblr est une technologie Komodo qui permet aux utilisateurs
+   d’anonymiser leurs crypto-monnaies. À son niveau fondamental,
+   Jumblr prend des fonds non privés d’une adresse transparente (non
+   privée), les déplace dans une série d’adresses zk-SNARK privées et
+   non traçables - ce qui déconnecte la trace de la devise et
+   anonymise les fonds - puis renvoie les fonds à une nouvelle adresse
+   transparente choisie par l'utilisateur. Grâce à une technologie
+   Komodo connectée, BarterDEX, Jumblr peut fournir ce service non
+   seulement pour la pièce de Komodo, KMD, mais également
+   pour toute crypto-monnaie connectée à l’écosystème de Komodo.
+
+   
+*** Introduction
+**** L'option de la protection de la vie privée est essentielle à l'écosystème de Komodo
+     L’un des principaux objectifs de l’écosystème de Komodo est de
+     fournir à nos utilisateurs les plus hauts niveaux de sécurité. La
+     possibilité de protéger sa vie privée fait partie intégrante d’un
+     système de sécurité solide. La confidentialité permet aux 
+     utilisateurs de faire des choix sans être directement contrôlés
+     ou observés par un acteur tiers.
+
+     Dans la plupart des avancées les plus significatives de l’art, de la
+     technologie et d’autres projets de l’humanité; elles ont commencé
+     dans des situations où le créateur avait la sécurité de la vie
+     privée pour explorer, découvrir, commettre des erreurs et
+     apprendre de la sorte.
+
+     Les racines de l'écosystème de Komodo sont issues du travail
+     fondateur de Satoshi Nakamoto et de son protocole
+     Bitcoin[fn:7]. L'un des principaux défis de cette technologie est
+     que le protocole d'origine ne tient aucun compte de la
+     confidentialité. Par conséquent, en faisant progresser la
+     technologie de la blockchain, nous avons créé Jumblr pour donner
+     aux membres de l’écosystème de Komodo les moyens de bénéficier de
+     cette sécurité nécessaire.
+
+**** Défis pour les systèmes centrés sur la confidentialité et la solution Komodo
+     Les voies actuelles pour obtenir de la confidentialité dans le
+     secteur de la blockchain posent de nombreux problèmes. 
+
+     L'une des méthodes les plus populaires pour obtenir la
+     confidentialité est l'utilisation d'un service de mixage
+     centralisé. Lors de ce processus, les utilisateurs envoient leurs
+     crypto-monnaies à des fournisseurs de services, qui ensuite
+     mélangent toutes les pièces des participants et les renvoient en
+     fonction des contributions correspondantes. Avec cette méthode,
+     le problème le plus dangereux, parmi beaucoup d'autres, est que
+     pendant la période de mixage, les utilisateurs perdent le
+     contrôle de leur devise. Les fonds sont donc sujets au vol et aux
+     erreurs humaines.
+
+     D'autres méthodes de mélange de pièces décentralisées, telles que
+     le mélange de pièces[fn:8], nécessitent une coordination avec d'autres
+     parties humaines. Cela introduit également le potentiel des mêmes
+     problèmes de vol et d’erreur humaine et ajoute un risque
+     supplémentaire: la coordination entre les parties humaines peut
+     entraîner la divulgation de la vie privée d’un utilisateur.
+
+     Certaines crypto-monnaies prennent en charge le mélange dans le
+     cadre du processus de transaction normal, dans le souci de
+     fournir un anonymat constant. Différentes méthodes de
+     randomisation de ces modèles de mélange de transactions existent
+     parmi les nombreuses marques de crypto-monnaies pertinentes. Le
+     plus populaire étant Monero. 
+
+     
+*** La solution Komodo
+**** Une introduction à Jumblr
+     Notre technologie Jumblr résout ces problèmes grâce à une
+     approche en deux couches reposant sur les technologies connectées
+     de l'écosystème de Komodo: BarterDEX, notre pièce de monnaie
+     Komodo (KMD) et les paramètres de Zcash en amont. Le processus
+     Jumblr est géré localement sur la machine de l'utilisateur et ne
+     nécessite aucun tiers, aucune coordination humaine ni aucun autre
+     service de mixage.
+
+     
+**** Une brève explication des deux technologies fondamentales
+***** La pièce Komodo (KMD)
+      KMD est une crypto-monnaie qui permet aux utilisateurs
+      d'effectuer des transactions transparentes et privées. Lors du
+      développement de l'écosystème de Komodo, nous utilisons KMD en
+      tant que crypto-monnaie native pour de nombreuses technologies
+      de connexion. KMD devient ainsi de plus en plus utile au fur et
+      à mesure que de nombreux outils Komodo sont construits, y
+      compris Jumblr
+***** KMD a démarré en tant que fork de Zcash
+      Cette pièce a en tant que fork de la pièce populaire pour la
+      protection de la vie privée, Zcash[fn:9]. En tant que tel, KMD
+      conserve les mêmes fonctionnalités de confidentialité
+      intrinsèques. Parmi ces fonctionnalités, notons les paramètres
+      de Zcash et la technologie zk-SNARK. Celles-ci permettent aux 
+      utilisateurs de transférer des fonds sur une blockchain publique 
+      sans laisser de trace de données pour une analyse ultérieure.
+
+      C’est l’une des formes les plus puissantes de confidentialité de
+      la blockchain, puisque la condition de vie privée est
+      effectivement permanente. Les paramètres de Zcash et la technologie 
+      zk-SNARK fournissent aux utilisateurs la base initiale pour
+      obtenir un financement transparent du KMD et le rendre anonyme
+      (avec l’aide de la technologie Jumblr de Komodo) sans laisser de
+      trace de la crypto-monnaie.
+
+      Le projet Zcash lui-même est un fork de Bitcoin. Ainsi, toutes
+      les fonctionnalités conçues par Satoshi Nakamoto dans le
+      protocole Bitcoin sont également disponibles sur Komodo.
+***** BarterDEX
+
+      BarterDEX est un protocole open source conçu et mis au point par
+      l'équipe de Komodo. Il permet aux utilisateurs d’échanger des
+      crypto-monnaies sans risque de contrepartie. Le protocole est
+      open-source et le trading est disponible pour toutes les pièces
+      que les développeurs choisissent de connecter à BarterDEX.
+      
+      Une discussion approfondie de BarterDEX est fournie dans la
+      section précédente de la partie III de ce document.
+***** Iguana Core       
+      La technologie de base de Komodo, appelée Iguana Core, est
+      essentielle à la fonctionnalité globale de l'écosystème de
+      Komodo. Elle est au centre de presque tous les projets de Komodo,
+      et Jumblr ne fait pas exception. Pour plus d'informations sur
+      Iguana Core, veuillez consulter notre GitHub Komodo
+      [[https://github.com/jl777/komodo][GitHub]]. Vous trouverez
+      également plus de détails dans la section BarterDEX de ce livre blanc.
+***** Komodod      
+
+      Komodod est le nom du logiciel d’arrière-plan (également appelé
+      démon) qui fonctionne dans les coulisses de pratiquement tous
+      les logiciels liés à Komodo. Vous trouverez plus d’informations
+      sur Komodod dans la partie DICO de ce document.
+
+*** Le processus Jumblr
+    Jumblr permet aux utilisateurs d'anonymiser leurs fonds. Le
+    processus Jumblr est enraciné dans notre pièce Komodo
+    (KMD), et les fonctions de confidentialité peuvent s’étendre
+    de ce fait à tout projet blockchain connecté à l’écosystème 
+    de Komodo.
+**** Anonymisation native des pièces Komodo (KMD)
+     Au niveau le plus simple, Jumblr prend des fonds KMD non privés
+     d'une adresse transparente (non privée), les déplace dans une
+     série d'adresses zk-SNARK privées et non traçables, ce qui
+     déconnecte la trace de la devise et anonymise les fonds ... et
+     retourne ensuite les fonds à une nouvelle adresse transparente
+     choisie par l'utilisateur.
+
+     L’intégralité du processus d’anonymisation s’effectue sur la ou
+     les machines locales de l’utilisateur, à une exception près:
+     celui de l’envoi des données au réseau pour le minage. Par
+     conséquent, Jumblr élimine de nombreux dangers, y compris les
+     problèmes de vol, d'erreur humaine, de divulgation de la vie
+     privée des utilisateurs par le biais d'une coordination humaine
+     et la destruction de la vie privée par la nature toujours
+     croissante de la puissance de calcul informatique.
+
+**** Actions utilisateur 
+     Les commandes qui initient Jumblr existent dans le programme
+     fondamental de Komodo sur la machine locale de l’utilisateur,
+     Komodod. Ce programme est inclus dans une installation Komodo
+     typique et, dans des circonstances normales, Komodod est connecté
+     de manière native aux mêmes adresses KMD auxquelles l'utilisateur
+     a accès.
+
+     Par conséquent, les utilisateurs de l’écosystème de Komodo ont
+     accès à la technologie de confidentialité de Jumblr sans autre
+     effort. Les développeurs d'applications graphiques autonomes pour
+     l'écosystème de Komodo peuvent intégrer les commandes Jumblr aux
+     interfaces utilisateur de la manière souhaitée.
+
+     Il existe deux commandes principales, ou appels d'API,
+     disponibles :
+     + =jumblr_deposit <KMDaddress>=
+     + =jumblr_secret <secretKMDaddress>=
+***** =jumblr_deposit <KMDaddress>=
+      Cette commande initie l'anonymisation de KMD.
+
+      Avant d'exécuter la commande, l'utilisateur prépare les fonds en
+      les plaçant dans la <KMDaddress> choisie. Tant que Komodod a
+      accès aux clés privées de <KMDaddress>, rien n'est plus
+      nécessaire. L'utilisateur exécute simplement la commande
+      "jumblr_deposit <KMDaddress>" et Jumblr commence à rechercher et
+      à traiter tous les fonds dans <KMDaddress>.
+
+      Remarque: nous appelons une adresse transparente une "adresse
+      T." Celles-ci sont entièrement accessibles à l'utilisateur et
+      constituent le moyen d'effectuer des transactions
+      normales. Toutes les devises entrant et sortant d'une adresse T
+      sont entièrement visibles sur le réseau.
+
+      D'autre part, nous appelons une adresse activée pour la
+      confidentialité une "adresse Z", car elles utilisent les
+      paramètres de Zcash et la technologie zk-SNARK. Les adresses Z
+      sont internes au processus de Jumblr et un utilisateur 
+      n’interagit généralement pas directement avec elles.
+
+      La première étape que Jumblr entreprend consiste à déplacer les
+      fonds de l’utilisateur d’une adresse T à une adresse Z.
+
+      #+BEGIN_CENTER
+      _La première étape du processus d'anonymisation de Jumblr_
+      #+END_CENTER
+
+      Déplacement des fonds d'une adresse transparente vers une
+      adresse activée pour la confidentialité.
+
+      #+BEGIN_CENTER
+      T\rightarrow Z
+      #+END_CENTER
+      
+      Naturellement, comme l'adresse T est entièrement publique, un
+      observateur extérieur peut voir les fonds dès leur départ pour
+      l'adresse Z respective. Par conséquent, pour déconnecter
+      complètement la piste de devise, Jumblr déplace ensuite les
+      fonds de l'adresse Z initiale vers une autre adresse Z.
+
+      Jumblr crée une nouvelle adresse Z pour chaque lot individuel.
+
+      #+BEGIN_CENTER
+      _La deuxième étape du processus d'anonymisation de Jumblr_
+      #+END_CENTER
+      
+      Déplacement des fonds d'une adresse Z unique et introuvable
+      
+      #+BEGIN_CENTER
+      Z\rightarrow Z
+      #+END_CENTER
+
+      Grâce à la technologie des paramètres de Zcash, zk-SNARKs et
+      Jumblr, les informations sur l'emplacement des fonds ne sont
+      connues que de l'utilisateur. L'utilisateur n'a pas besoin de
+      suivre les mouvements de T → Z et Z → Z. Toutefois, pour
+      l'utilisateur avancé, des commandes Jumblr sont disponibles pour
+      permettre une interaction plus active à ces étapes (voir le wiki
+      de Komodo pour plus de détails). Une commande à mentionner ici
+      est z_gettotalbalance. Cela révèle à l'utilisateur le solde
+      total qu'il détient dans toutes ses adresses Z. 
+
+      Lors de l'exécution de la commande =[jumblr_deposit
+      <KMDaddress>]=, Jumblr commence à observer en permanence la
+      =<KMDaddress>=. Si l'utilisateur envoie plus de fonds dans son
+      =<KMDaddress>= alors que Jumblr traite déjà le montant précédent,
+      Jumblr prendra simplement ces nouveaux fonds en compte,
+      exécutera les actions nécessaires pour les intégrer correctement
+      dans le processus et poursuivra son cours.
+      
+      Jumblr comprend deux sous-commandes qui permettent à
+      l'utilisateur de mettre Jumblr en pause manuellement :
+      =<jumblr_pause>= et =<jumblr_resume>=. L'utilisateur peut
+      également arrêter Jumblr en fermant Komodod (et toutes les
+      applications GUI autonomes appropriées). Une fois que les fonds
+      ont atteint leur(s) adresse(s) finale(s), ils restent en
+      sommeil, dans l’attente de la prochaine commande de
+      l’utilisateur.
+
+      
+***** =jumblr_secret <secretKMDaddress>=
+      L'utilisateur exécute cette commande pour terminer le processus
+      Jumblr. Jumblr extraira toutes les devises cachées de
+      l’utilisateur de chaque adresse Z et placera les fonds dans une
+      nouvelle adresse T, que nous appellerons
+      =<secretKMDaddress>=. Cela rend les fonds réutilisables à
+      nouveau. 
+
+      #+BEGIN_CENTER
+      _La troisième et dernière étape du processus d'anonymisation de Jumblr_
+      #+END_CENTER
+
+      Déplacement des fonds d'une adresse Z unique et introuvable
+
+      #+BEGIN_CENTER
+      Z\rightarrow T
+      #+END_CENTER
+
+      Nous vous recommandons de conserver ces adresses privées
+      principalement pour le stockage. Vous ne devriez jamais partager
+      avec qui que ce soit des informations concernant votre
+      =<secretKMDaddress>=. Traitez toutes les informations pertinentes
+      comme un mot de passe.
+
+      Lorsque vous êtes prêt à dépenser avec vos fonds privés, nous
+      vous recommandons de répétez le processus Jumblr à nouveau
+      pour le montant que vous souhaitez dépenser. Cela maintiendra la
+      majeure partie de vos fonds stockés dans un "intervalle" de
+      confidentialité, pour ainsi dire. Pour une confidentialité
+      maximale, nous suggérons également qu'après avoir vidé le nœud
+      public de tous les fonds, l'utilisateur supprime et détruise le
+      fichier wallet.dat dans lequel le processus initial de création
+      de la confidentialité a eu lieu. Cela détruit les derniers
+      vestiges du chemin de emprunté par la crypto-monnaie.
+
+*** Couches de sécurité additionnelles
+**** Le processus de rupture de fonds de Jumblr
+     La méthode par laquelle Jumblr décompose et traite les fonds
+     fournit encore une autre couche à la vie privée. Jumblr commence
+     par prendre le montant total dans <KMDaddress> et, si nécessaire,
+     en le divisant jusqu'à ce que les plus grandes quantités soient
+     toutes égales à ~7770 KMD. Il décompose ensuite le reste en
+     quantités de ~100 KMD, puis le reste en quantités de ~ 10
+     KMD. Tout reste final (qui serait inférieur à ~10 KMD) est
+     ignoré.
+
+     Notez que Jumblr extrait également automatiquement ses frais
+     généraux de 0,3% au cours du processus Jumblr.
+     
+     Par conséquent, le montant total est divisé en lots de ~ 7770
+     KMD, ~ 100 KMD et ~ 10 KMD.
+
+**** Le processus de Jumblr de déplacer les lots individuels vers une adresse privée
+     Jumblr ne déplace pas immédiatement chaque lot dans une adresse
+     Z. Au lieu de cela, il effectue ses actions de manière aléatoire
+     afin d'optimiser l'anonymat, en utilisant le collectif de tous
+     les utilisateurs de Jumblr dans l'écosystème de Komodo pour
+     fusionner les transactions de la foule.
+
+     Tout d’abord, toutes les actions Jumblr de l’écosystème sont
+     programmées pour se regrouper autour de nombres de blocs
+     multiples de dix (c’est-à-dire hauteur de la chaîne =
+     XXXXX0). Cela regroupe toutes les demandes Jumblr de tous les
+     utilisateurs pour la période donnée dans un grand groupe,
+     regroupées toutes les dix minutes (un bloc unique se génère chaque
+     minute et, par conséquent, le dixième bloc se produit toutes les
+     dix minutes).
+
+     Au moment de l'activité, Jumblr effectue l'une des deux tâches
+     suivantes: il effectue l'action suivante dans le processus
+     d'anonymisation ou il choisit de ne rien faire.
+
+***** Option 1 : Jumblr réalise la prochaine action     
+
+      Lorsque Jumblr regarde l'action suivante, il peut effectuer
+      l'une des trois étapes suivantes :
+      
+      + T → Z Si le lot n'a pas encore été déplacé de <KMDaddress>,
+        Jumblr peut le déplacer de la première adresse T à la première
+        adresse Z.
+      + Z → Z En supposant que le lot se trouve maintenant dans la
+        première adresse Z, Jumblr peut le déplacer vers l'adresse Z
+        finale
+      + Z → T En supposant que l'appel d'API <jumblr_secret> soit
+        activé, Jumblr peut déplacer le lot de l'adresse Z finale vers
+        l'adresse T finale: <secretKMDaddress>.
+	
+***** Option 2 : ne fait rien
+      + À chaque tour, au lieu d'effectuer l'une des étapes ci-dessus,
+        Jumblr peut simplement s'abstenir de toute action. Cela se
+        produit environ la moitié du temps.
+	
+
+      Grâce à ces actions, Jumblr ajoute une couche d’obscurcissement
+      au-dessus des paramètres Zcash et de la technologie zk-SNARK en
+      ajoutant de la confidentialité au minutage et aux mouvements de
+      chaque étape pour chaque utilisateur.
+
+*** Considérations de confidentialité supplémentaires
+    Bien que le processus d’anonymisation de KMD fournisse une mesure de
+    confidentialité semblant suffisante, il existe encore plus de 
+    précautions qu'un utilisateur doive prendre. Deux attaques principales
+    sont disponibles pour un détective potentiel.
+
+**** L'attaque chronométrique
+     Dans cette attaque, le détective étudie simplement le moment où
+     les fonds disparaissent de l'adresse =<KMDaddress>= et cherche des
+     fonds à apparaître dans une adresse T peu de temps après. Si
+     l'utilisateur de la confidentialité choisit de manière
+     persistante un minutage prévisible pour le lancement et
+     l'exécution des commandes Jumblr, un tiers déterminé peut en
+     déduire la =<secretKMDaddress>= d'un utilisateur.
+
+     Le processus susmentionné de regroupement et de randomisation du
+     minutage des mouvements fournit une couche de sécurité contre 
+     l'attaque chronométrique. Les utilisateurs combinent ainsi la
+     synchronisation de leurs mouvements, utilisant le pouvoir du
+     collectif pour masquer leurs transactions depuis le limier.
+
+     Cependant, l’attaque au moment d’émission reste un problème si
+     l’utilisateur est la seule personne qui emploie Jumblr pour la
+     durée de l’anonymisation de ses fonds. Dans ce cas, aucune
+     anonymisation n'a lieu. Le détective peut clairement voir les
+     fonds sortir de =<KMDaddress>= et revenir à =<secretKMDaddress>= plus
+     tard. Par conséquent, pour être efficace, Jumblr nécessite plus
+     d'un utilisateur et gagne en force avec des niveaux d'adoption
+     plus élevés. Compte tenu de la taille croissante de la communauté
+     de Komodo, nous prévoyons que les utilisateurs seront facilement
+     en mesure de surmonter l'attaque chronométrique.
+
+**** L'attaque du sac à dos
+     L’attaque au sac à dos est un peu comme l’attaque chronométrique,
+     mais appliquée sur les montants. Par exemple, si une seule
+     adresse KMD a entré ~ 1000000 KMD dans Jumblr, et que environ 1
+     000 KMD apparaît plus tard ailleurs, le détective peut facilement
+     distinguer la =<secretKMDaddress>= de l'utilisateur.
+
+     Le processus de décomposition du montant total en trois lots de
+     taille égale (~7770, ~100, ~10 KMD) pour tous les utilisateurs
+     fournit une couche de sécurité contre l'attaque du sac à dos. Les
+     utilisateurs peuvent à nouveau mélanger leurs transactions, en
+     utilisant la puissance du collectif pour dissimuler leurs
+     mouvements.
+     
+     Jumblr a une autre fonctionnalité, Multiple Secret Addresses, qui
+     protège également contre cette attaque. Cette fonctionnalité est
+     expliquée dans la section suivante.
+
+**** Autres améliorations de sécurité pour lutter contre les attaques de synchronisation et de sac à dos
+***** Plus de défense contre l'attaque du sac à dos : adresses secrètes multiples
+      En tant que couche de sécurité supplémentaire, les utilisateurs
+      peuvent créer plusieurs adresses KMD secrètes
+      (=<secretKMDaddress>=) et les utiliser activement dans le
+      processus Jumblr.
+
+      Si vous utilisez plusieurs =<secretKMDaddress>=, chaque fois que
+      Jumblr atteint l’étape de Z → T pour un lot donné de KMD, Jumblr
+      choisira au hasard l'un des =<secretK-Adresse MD>= pour l’adresse
+      T finale de ce lot. Cela permet à l’utilisateur de scinder son
+      financement initial en plusieurs =<secretKMDaddress>= différentes,
+      offrant ainsi une couche de sécurité supplémentaire contre
+      l’attaque du sac à dos.
+
+      Jumblr gère jusqu'à 777 =<secretKMDaddress>= en même temps.
+
+***** Autres améliorations contre l'attaque chronométrique      
+      La défense la plus simple et la plus solide contre l'attaque
+      chronométrique est entre les mains des utilisateurs. 
+      Rappelez-vous qu'un utilisateur choisit les moments où il
+      exécute les commandes <jumblr_deposit> et <jumblr_secret>. 
+      Plus un utilisateur conserve longtemps sa devise dans la ou 
+      les adresses Z blindées, plus il est protégé contre l’attaque
+      par synchronisation. Cela est dû au fait que les actions Jumblr
+      d’autres utilisateurs pendant l’intérim obscurcissent la piste.
+      Nous encourageons donc les utilisateurs soucieux de leur 
+      protection contre cette attaque à retarder le délai d'exécution
+      entre les deux commandes.
+
+      Nous avons également développé Jumblr pour offrir des
+      protections inhérentes supplémentaires contre l’attaque par
+      synchronisation dans les cas où les utilisateurs souhaitent un
+      transfert plus immédiat. En supposant que Jumblr soit activé sur
+      l’ordinateur local de l’utilisateur, dès que Jumblr détecte un
+      nouveau dépôt dans <KMDaddress>, il peut commencer le processus
+      d’anonymisation. Cependant, Jumblr retarde délibérément ses
+      propres progrès afin de fournir une couche de sécurité contre
+      l'attaque chronométrique.
+
+      Rappelez-vous que toutes les actions des utilisateurs sont
+      regroupées autour de nombres de blocs multiples de dix, et la
+      moitié du temps, Jumblr décide de ne rien faire. Par conséquent,
+      sur le plan statistique, bien que le processus d'arrière-plan
+      de Jumblr puisse toujours fonctionner sur Komodod, Jumblr n'est
+      activé que pour vérifier les tâches en attente toutes les dix
+      minutes et n'effectue des tâches que toutes les vingt
+      minutes. Ainsi, chaque heure comporte environ trois moments
+      différents au cours desquels Jumblr exécutera l'une des trois
+      actions disponibles: T → Z, Z → Z et Z → T. Ce programme
+      randomise le temps nécessaire à l'achèvement du processus de
+      Jumblr.
+
+      En supposant que, pendant une période d'activité donnée, Jumblr
+      décide d'effectuer l'action de T → Z, il commence par examiner
+      les différentes tailles de lots, du plus grand au plus petit,
+      commençant ainsi par un lot de 7770 KMD jusqu'à ce qu'ils
+      soient tous attribués, puis aux Lots de 100 KMD, et enfin aux
+      lots de 10 KMD. Pendant toute la période d'activité, Jumblr
+      n'effectuera le mouvement T → Z que pour un seul lot, puis
+      s'arrêtera.
+      
+      Cependant, lorsque Jumblr effectue l'une des deux autres actions
+      (Z → Z et Z → T), il effectue les transferts pour tous les lots
+      en jeu.
+
+      Ainsi, grâce à ces garanties supplémentaires, Jumblr triomphe de
+      l'attaque chronométrique et de l’attaque du sac à dos, en
+      s’appuyant sur la puissance des paramètres de Zcash et de la
+      technologie zk-SNARK. Plus il y a de participants à Jumblr, plus
+      les utilisateurs gagnent en confidentialité. Pour ceux qui
+      utilisent régulièrement Jumblr, le coût d'utilisation de Jumblr
+      de 0,3% est compensé par les 5,1% de récompenses pouvant être
+      gagnés avec la pièce de monnaie Komodo (KMD). Ainsi, moyennant
+      une somme modique, les utilisateurs de Jumblr peuvent se
+      protéger et protéger leur communauté.
+
+*** Offrir la confidentialité à d'autres crypto-monnaies
+    Jumblr peut assurer la confidentialité de toute crypto-monnaie
+    connectée à l'écosystème de Komodo, étant donné que BarterDEX est
+    intégré de manière native. Actuellement, l'utilisateur doit
+    effectuer les premières et dernières étapes du trading dans
+    le processus Jumblr des crypto-monnaies non-KMD. À long terme,
+    Jumblr est toutefois capable d'automatiser complètement le
+    processus. Nous attendons une adoption plus large pour compléter
+    les fonctionnalités d'automatisation non-KMD.
+
+**** Le processus Jumblr actuel : trading manuel non-KMD vers trading sur BarterDEX
+     Globalement, pour assurer la confidentialité d'une crypto-monnaie
+     non KMD dans l'écosystème de Komodo, cette devise doit d'abord
+     être échangée sur BarterDEX en KMD. Une fois que la valeur
+     sous-jacente est détenue en tant que KMD dans une <KMDaddress>,
+     Jumblr peut terminer son travail. Une fois l'opération terminée,
+     le fichier KMD anonymisé est à nouveau échangé sur BarterDEX
+     contre la crypto-monnaie pertinente non-KMD et est renvoyé à une
+     adresse secrète choisie par l'utilisateur. À l'heure actuelle,
+     alors que BarterDEX en est à ses débuts, nous concentrons nos
+     énergies sur l'amélioration de la convivialité globale de
+     BarterDEX.
+
+**** Capacités futures : Jumblr automatise le processus de trading BarterDEX pour l'utilisateur
+     À l'avenir, Jumblr sera simplement un client du service BarterDEX
+     lorsqu'il fournira une confidentialité aux crypto-monnaies autres
+     que KMD.
+
+     Lorsqu'un utilisateur active Jumblr pour une pièce non-KMD,
+     Jumblr demandera à BarterDEX d'échanger la pièce non-KMD en KMD
+     transparent en fonction des prix actuels. La valeur sous-jacente
+     étant maintenant dans KMD, le protocole Jumblr exécute la
+     totalité du processus décrit précédemment. La valeur
+     sous-jacente étant rendue privée, Jumblr demandera à BarterDEX de
+     renvoyer la valeur à la crypto-monnaie choisie par
+     l'utilisateur. Enfin, Jumblr renverra la somme finale à une
+     nouvelle adresse, fournie par l'utilisateur au début du processus.
+
+     En raison des fluctuations du marché, en fonction de la
+     liquidité, il est possible qu'un utilisateur subisse un
+     glissement de la valeur sous-jacente de sa crypto-monnaie non
+     KMD. Bien qu'il soit possible de prédéfinir le trading sur
+     BarterDEX (éliminant ainsi tout glissement), il n'existe aucune
+     méthode disponible pour prendre un tel arrangement sans divulguer
+     des informations confidentielles. La partie effectuant la seconde
+     partie de l’opération surBarterDEX constituerait un point de
+     défaillance central. Par conséquent, la méthode la plus privée de
+     création de confidentialité non-KMD consiste simplement à faire
+     appel aux fournisseurs de liquidités BarterDEX actifs.
+
+*** Un mot sur les risques inhérents à Jumblr et à l'écosystème de Komodo
+    La pièce de monnaie Komodo (KMD), et donc Jumblr par association,
+    reposent toutes les deux sur les paramètres de Zcash présentés par
+    l'équipe Zcash. Les paramètres de Zcash sont une forme de technologie
+    "à connaissance nulle". Il s’agit d’une forme puissante de vie
+    privée, et sans doute supérieure à d’autres formes, car elle est
+    effectivement permanente. En s’appuyant sur les paramètres de Zcash,
+    nous pouvons utiliser nos ressources créatives pour nous attaquer
+    à d’autres défis technologiques liés à la blockchain, tout en
+    donnant aux membres de l’écosystème de Komodo l’option de la
+    confidentialité.
+
+    Pour créer les paramètres de Zcash, les développeurs Zcash d'origine
+    ont dû créer une série de clés qui, une fois combinées, ont créé
+    une clé principale pouvant déverrouiller et verrouiller les
+    paramètres. Après avoir utilisé la clé principale pour créer les
+    paramètres, l'équipe a détruit chaque clé individuelle. L'équipe a
+    mené cette entreprise de manière publique. Nous encourageons les
+    lecteurs intéressés à consulter l'explication "Cérémonie Zcash" et
+    à rechercher d'autres points de vue.
+    
+    Pour résumer brièvement les mesures de sécurité, l’équipe de Zcash
+    a utilisé plusieurs couches de protection, notamment: calcul
+    multipartite, nœuds de calcul dissociés, traces de preuves sur
+    papier, distribution unique du système d’exploitation Linux et
+    destruction physique de chaque matériel ayant tenu une clé
+    individuelle. Les couches de défense qui en résulteraient seraient 
+    du plus haut niveau de difficulté à pénétrer pour un étranger.
+    De plus, la méthode de création et de destruction garantissait 
+    la sécurité interne du projet, dans la mesure où au moins un membre
+    de l’équipe de Zcash était honnête.
+
+    Néanmoins, il existe des défenseurs de la vie privée dans le
+    secteur des crypto-monnaies qui entretiennent une certaine
+    suspicion à l'égard de tout projet nécessitant un élément de
+    confiance humaine. Cette suspicion s'étend aux paramètres de
+    Zcash. Ces observateurs scrutent en permanence le projet Zcash, à
+    la recherche de plus en plus de processus par lesquels la
+    cérémonie de création aurait pu échouer. Pourtant, bien que
+    diverses théories aient été avancées, aucune défaillance réelle
+    des paramètres de Zcash n’a été découverte.
+
+    En adoptant les paramètres de Zcash, nous recevons souvent des
+    questions sur leur incidence sur la pièce de monnaie Komodo. La
+    réponse est que la confidentialité dans l'écosystème de Komodo est
+    permanente, indépendamment de toute faute potentielle de la part
+    de l'équipe Zcash. En outre, nous pouvons adopter toutes les mises
+    à jour des paramètres publiées par l’équipe de Zcash.
+
+    Dans le cas improbable où une personne pourrait conserver une
+    copie complète de la clé principale, le seul pouvoir dont
+    disposerait le titulaire serait la possibilité de créer de
+    nouveaux fonds privés dans notre système. Ce détenteur pourrait
+    alors échanger cet argent contre de l'argent transparent et
+    rentable. Cela pourrait avoir un impact négatif sur la pièce de
+    Komodo et il nous faudrait adapter notre plate-forme. Si
+    une erreur dans les paramètres de Zcash devait être découverte,
+    l'équipe de Komodo dispose de plusieurs méthodes de secours pour
+    supprimer les paramètres de Zcash et les remplacer par un nouvel
+    ensemble de paramètres.
+
+     Même si dans Komodo, nous ne voyons pas cela comme une menace
+     réaliste, nous incluons néanmoins les informations dans notre
+     livre blanc pour fournir une transparence complète pour tout
+     utilisateur cherchant à investir ses ressources dans le projet
+     Komodo.
+
+*** Jumblr fournit à l'écosystème de Komodo la confidentialité
+    Pour que l'écosystème de Komodo atteigne son plein potentiel,
+    l'option de la confidentialité renforcée doit être disponible pour
+    les utilisateurs de Komodo. Jumblr répond à cette demande.
+
+    Jumblr s'appuie sur BarterDEX, KMD et Iguana Core pour se
+    connecter à l'écosystème de Komodo. La confidentialité fondamentale
+    qu'il offre repose sur la pièce KMD, les paramètres de
+    Zcash et la technologie zk-SNARK. Des améliorations
+    supplémentaires sont intégrées au processus Jumblr afin de
+    maximiser la confidentialité de l'utilisateur, notamment des
+    protections contre l'attaque chronométrique et l'attaque du
+    sac à dos. Grâce à BarterDEX et à Iguana Core, ces fonctions de
+    confidentialité s’appliquent à toute crypto-monnaie connectée à
+    l’écosystème de Komodo. 
+
+    À mesure que de plus en plus d'utilisateurs font partie de
+    l'écosystème de Komodo, ils peuvent travailler ensemble pour
+    améliorer à la fois leur vie privée et celle des autres membres de
+    l'écosystème. Alors que l'écosystème continue de croître, l'équipe
+    de Komodo peut offrir à Jumblr différents niveaux de croissance,
+    notamment l'automatisation du processus Jumblr non-KMD. Nous
+    attendons avec impatience vos commentaires sur cette technologie
+    qui renforce la confidentialité.
+
+* Information supplémentaire concernant l'écosystème Komodo
+** Notes finales concernant le projet Komodo
+*** Crypto-monnaies à taux fixe 
+*** Les contrats intelligents sur la plateforme Komodo 
+**** Les contrats intelligents basés sur le protocole Bitcoin
+**** Conditions cryptographiques, racine Merkle de la racine Merkle (MoM: Merkle Root of Merkle Root) et chaînes d'actifs personnalisées
+**** Détails concernant la chaîne principale de l'écosystème de Komodo : KMD
+**** Conclusion 
+** Rémerciements et références
+* Liens pour collaborer
+  1. La vidéo explicative : [[https://youtu.be/L1IU06G9TUE]]
+  2. Rejoindre le groupe [[https://t.me/joinchat/JGxHIxMP5cWHHVDjxpcATQ][Telegram]] pour la répartition des tâches
+* Ressources complémentaires
+  1. [[https://youtu.be/ooJCp3YTLKk][2017-06-29]]
+  2. [[https://youtu.be/INVxFEWo6VI][2017-09-23]]
+  3. [[https://youtu.be/bUja6AOL05w][2017-10-03]]
+  4. [[https://youtu.be/GUzpzgfvTlg][2017-10-18]]
+  5. [[https://youtu.be/wnKAfgv_g9M][2017-10-29]]
+  6. [[https://youtu.be/epwgFAZj0z0][2017-11-06]]
+  7. [[https://youtu.be/BSXTWOx10vI][2017-12-23]]
+  8. [[https://youtu.be/O1_K4JAiomo][2017-12-26]]
+  9. [[https://youtu.be/Y_AiDg1o2Ns][2018-08-16]]
+ 10. [[https://youtu.be/C0KWm3h2fFM][2018-09-14]]
+ 11. 
+
+* Footnotes
+
+[fn:9] [[https://z.cash/]]
+
+[fn:8]
+[[https://bitcoinmagazine.com/articles/shuffling-coins-to-protect-privacy-and-fungibility%252Da%252Dnew%252Dtake%252Don%252Dtraditional%252Dmixing%252D1465934826/]]
+
+
+[fn:7] [[https://bitcoin.org/bitcoin.pdf]]
+
+[fn:6] NdT : crowdsourcing
+
+[fn:5] NdT : /'number' you use 'once'/ => nonce
+
+[fn:4] NdT : preuve de travail
+
+[fn:3] NdT : on peut voir ça comme une signature
+
+[fn:2] https://en.wikipedia.org/wiki/Bitcoin_network
+
+[fn:1] https://en.wikipedia.org/wiki/Enigma_machine
